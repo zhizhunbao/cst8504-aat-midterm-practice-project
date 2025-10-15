@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
+import { getDataPath } from "../utils/pathUtils";
 
 const LanguageContext = createContext();
 
@@ -23,7 +24,7 @@ export const LanguageProvider = ({ children }) => {
 
   // 动态加载翻译文件
   useEffect(() => {
-    fetch("/data/i18n/translations.json")
+    fetch(getDataPath("i18n/translations.json"))
       .then((response) => response.json())
       .then((data) => setTranslations(data))
       .catch((error) => {

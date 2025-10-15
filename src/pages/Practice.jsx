@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { getDataPath } from "../utils/pathUtils";
 import {
   CheckCircle,
   BarChart3,
@@ -79,14 +80,14 @@ const Practice = () => {
 
       // 从 public 目录加载所有章节数据
       const chapterModules = await Promise.all([
-        fetch("/data/questions/python-basics.json").then((res) =>
+        fetch(getDataPath("questions/python-basics.json")).then((res) =>
           res.json()
         ),
-        fetch("/data/questions/numpy.json").then((res) => res.json()),
-        fetch("/data/questions/pandas.json").then((res) => res.json()),
-        fetch("/data/questions/matplotlib.json").then((res) => res.json()),
-        fetch("/data/questions/ai-intro.json").then((res) => res.json()),
-        fetch("/data/questions/midterm-exam.json").then((res) =>
+        fetch(getDataPath("questions/numpy.json")).then((res) => res.json()),
+        fetch(getDataPath("questions/pandas.json")).then((res) => res.json()),
+        fetch(getDataPath("questions/matplotlib.json")).then((res) => res.json()),
+        fetch(getDataPath("questions/ai-intro.json")).then((res) => res.json()),
+        fetch(getDataPath("questions/midterm-exam.json")).then((res) =>
           res.json()
         ),
       ]);

@@ -11,6 +11,7 @@ import {
 import { useLanguage } from "../contexts/LanguageContext";
 import { useProgress } from "../contexts/ProgressContext";
 import { useNavigate } from "react-router-dom";
+import { getDataPath } from "../utils/pathUtils";
 
 const Lessons = () => {
   const { t, language } = useLanguage();
@@ -21,7 +22,7 @@ const Lessons = () => {
 
   useEffect(() => {
     // Load chapters data
-    fetch("/data/lessons/chapters.json")
+    fetch(getDataPath("lessons/chapters.json"))
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP ${response.status}: ${response.statusText}`);
