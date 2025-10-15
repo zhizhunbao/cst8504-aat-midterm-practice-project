@@ -25,7 +25,11 @@ function App() {
           <AppStateProvider>
             <QuestionTypeStateProvider>
               <Router
-                basename="/cst8504-aat-midterm-practice-project"
+                basename={
+                  import.meta.env.DEV
+                    ? "/"
+                    : "/cst8504-aat-midterm-practice-project"
+                }
                 future={{
                   v7_startTransition: true,
                   v7_relativeSplatPath: true,
