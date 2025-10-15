@@ -1,5 +1,4 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
-import translations from "../data/i18n/translations.json";
 
 const LanguageContext = createContext();
 
@@ -16,10 +15,22 @@ export const LanguageProvider = ({ children }) => {
     // 强制默认使用英文，忽略本地存储
     return "en";
   });
+  const [translations, setTranslations] = useState({});
 
   useEffect(() => {
     localStorage.setItem("language", language);
   }, [language]);
+
+  // 动态加载翻译文件
+  useEffect(() => {
+    fetch("/data/i18n/translations.json")
+      .then((response) => response.json())
+      .then((data) => setTranslations(data))
+      .catch((error) => {
+        console.error("Failed to load translations:", error);
+        setTranslations({});
+      });
+  }, []);
 
   const t = (key) => {
     const keys = key.split(".");
