@@ -157,7 +157,7 @@ const Exam = () => {
       const allQuestions = [];
       for (const chapter of chapterFiles) {
         try {
-          const response = await fetch(`/data/questions/${chapter}.json`);
+          const response = await fetch(`/src/data/questions/${chapter}.json`);
           if (!response.ok) {
             throw new Error(`HTTP ${response.status}: ${response.statusText}`);
           }
