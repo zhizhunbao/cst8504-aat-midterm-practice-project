@@ -1,0 +1,575 @@
+{
+  "chapter": "pandas",
+  "questions": [
+    {
+      "id": "pd-001",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "Pandas的主要数据结构是什么？",
+        "en": "What are the main data structures in Pandas?"
+      },
+      "options": [
+        {
+          "zh": "Series和DataFrame",
+          "en": "Series and DataFrame"
+        },
+        {
+          "zh": "Array和Matrix",
+          "en": "Array and Matrix"
+        },
+        {
+          "zh": "List和Dict",
+          "en": "List and Dict"
+        },
+        {
+          "zh": "Vector和Table",
+          "en": "Vector and Table"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "Pandas的主要数据结构是Series（一维）和DataFrame（二维）。",
+        "en": "The main data structures in Pandas are Series (1D) and DataFrame (2D)."
+      },
+      "topic": "pandas-structures",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 2",
+        "section": "Pandas Series: one dimensional, Pandas DataFrame: two dimensional"
+      }
+    },
+    {
+      "id": "pd-002",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "如何创建一个Pandas Series？",
+        "en": "How to create a Pandas Series?"
+      },
+      "options": [
+        {
+          "zh": "pandas.Series([45, 7, 23])",
+          "en": "pandas.Series([45, 7, 23])"
+        },
+        {
+          "zh": "pandas.create_series([45, 7, 23])",
+          "en": "pandas.create_series([45, 7, 23])"
+        },
+        {
+          "zh": "pandas.array([45, 7, 23])",
+          "en": "pandas.array([45, 7, 23])"
+        },
+        {
+          "zh": "pandas.list([45, 7, 23])",
+          "en": "pandas.list([45, 7, 23])"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用pandas.Series()函数可以创建Series，默认索引为0, 1, 2...",
+        "en": "Use the pandas.Series() function to create a Series with default indices 0, 1, 2..."
+      },
+      "topic": "series-creation",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 15",
+        "section": "Default indices: pandas.Series([45,7,23])"
+      }
+    },
+    {
+      "id": "pd-003",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何创建一个具有自定义索引的Series？",
+        "en": "How to create a Series with custom indices?"
+      },
+      "options": [
+        {
+          "zh": "pandas.Series(80, index=[45, 7, 23])",
+          "en": "pandas.Series(80, index=[45, 7, 23])"
+        },
+        {
+          "zh": "pandas.Series([45, 7, 23], index=[80, 80, 80])",
+          "en": "pandas.Series([45, 7, 23], index=[80, 80, 80])"
+        },
+        {
+          "zh": "pandas.Series(80, [45, 7, 23])",
+          "en": "pandas.Series(80, [45, 7, 23])"
+        },
+        {
+          "zh": "pandas.Series(index=[45, 7, 23], value=80)",
+          "en": "pandas.Series(index=[45, 7, 23], value=80)"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用pandas.Series(value, index=indices)可以创建具有自定义索引的Series。",
+        "en": "Use pandas.Series(value, index=indices) to create a Series with custom indices."
+      },
+      "topic": "series-creation",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 15",
+        "section": "index is a keyword argument: pandas.Series(80,index=[45,7,23])"
+      }
+    },
+    {
+      "id": "pd-004",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "如何访问Series的所有值？",
+        "en": "How to access all values of a Series?"
+      },
+      "options": [
+        {
+          "zh": "seriesname.values",
+          "en": "seriesname.values"
+        },
+        {
+          "zh": "seriesname.data",
+          "en": "seriesname.data"
+        },
+        {
+          "zh": "seriesname.content",
+          "en": "seriesname.content"
+        },
+        {
+          "zh": "seriesname.elements",
+          "en": "seriesname.elements"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用seriesname.values属性可以访问Series的所有值。",
+        "en": "Use the seriesname.values attribute to access all values of a Series."
+      },
+      "topic": "series-access",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 16",
+        "section": "Access all values: seriesname.values"
+      }
+    },
+    {
+      "id": "pd-005",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "如何获取Series的统计描述？",
+        "en": "How to get statistical description of a Series?"
+      },
+      "options": [
+        {
+          "zh": "seriesname.describe()",
+          "en": "seriesname.describe()"
+        },
+        {
+          "zh": "seriesname.stats()",
+          "en": "seriesname.stats()"
+        },
+        {
+          "zh": "seriesname.summary()",
+          "en": "seriesname.summary()"
+        },
+        {
+          "zh": "seriesname.info()",
+          "en": "seriesname.info()"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用seriesname.describe()方法可以获取Series的统计描述，包括四分位数等。",
+        "en": "Use the seriesname.describe() method to get statistical description of a Series, including quartiles."
+      },
+      "topic": "series-statistics",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 16",
+        "section": "quartiles and all the above produced by seriesname.describe()"
+      }
+    },
+    {
+      "id": "pd-006",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何从字典创建DataFrame？",
+        "en": "How to create a DataFrame from a dictionary?"
+      },
+      "options": [
+        {
+          "zh": "pd.DataFrame({'me':[0],'him':[10],'her':[20]})",
+          "en": "pd.DataFrame({'me':[0],'him':[10],'her':[20]})"
+        },
+        {
+          "zh": "pd.create_dataframe({'me':[0],'him':[10],'her':[20]})",
+          "en": "pd.create_dataframe({'me':[0],'him':[10],'her':[20]})"
+        },
+        {
+          "zh": "pd.from_dict({'me':[0],'him':[10],'her':[20]})",
+          "en": "pd.from_dict({'me':[0],'him':[10],'her':[20]})"
+        },
+        {
+          "zh": "pd.make_dataframe({'me':[0],'him':[10],'her':[20]})",
+          "en": "pd.make_dataframe({'me':[0],'him':[10],'her':[20]})"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用pd.DataFrame()函数可以从字典创建DataFrame，字典的键成为列名。",
+        "en": "Use the pd.DataFrame() function to create a DataFrame from a dictionary, where dictionary keys become column names."
+      },
+      "topic": "dataframe-creation",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 18",
+        "section": "pd.DataFrame({'me':[0],'him':[10],'her':[20]})"
+      }
+    },
+    {
+      "id": "pd-007",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何通过标签访问DataFrame的行？",
+        "en": "How to access DataFrame rows by label?"
+      },
+      "options": [
+        {
+          "zh": "dataframename.loc['label']",
+          "en": "dataframename.loc['label']"
+        },
+        {
+          "zh": "dataframename.get('label')",
+          "en": "dataframename.get('label')"
+        },
+        {
+          "zh": "dataframename['label']",
+          "en": "dataframename['label']"
+        },
+        {
+          "zh": "dataframename.row('label')",
+          "en": "dataframename.row('label')"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用dataframename.loc['label']可以通过标签访问DataFrame的行。",
+        "en": "Use dataframename.loc['label'] to access DataFrame rows by label."
+      },
+      "topic": "dataframe-access",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 19",
+        "section": "dataframename.loc['label'] gives the row with explicit label"
+      }
+    },
+    {
+      "id": "pd-008",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何通过位置访问DataFrame的行？",
+        "en": "How to access DataFrame rows by position?"
+      },
+      "options": [
+        {
+          "zh": "dataframename.iloc[int]",
+          "en": "dataframename.iloc[int]"
+        },
+        {
+          "zh": "dataframename.loc[int]",
+          "en": "dataframename.loc[int]"
+        },
+        {
+          "zh": "dataframename.get(int)",
+          "en": "dataframename.get(int)"
+        },
+        {
+          "zh": "dataframename.at[int]",
+          "en": "dataframename.at[int]"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用dataframename.iloc[int]可以通过位置（0基索引）访问DataFrame的行。",
+        "en": "Use dataframename.iloc[int] to access DataFrame rows by position (0-based index)."
+      },
+      "topic": "dataframe-access",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 19",
+        "section": "dataframename.iloc[int] gives the row at position int (0-based)"
+      }
+    },
+    {
+      "id": "pd-009",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何访问DataFrame的特定单元格？",
+        "en": "How to access a specific cell in a DataFrame?"
+      },
+      "options": [
+        {
+          "zh": "dataframename.at['rowlabel', 'columnlabel']",
+          "en": "dataframename.at['rowlabel', 'columnlabel']"
+        },
+        {
+          "zh": "dataframename.get('rowlabel', 'columnlabel')",
+          "en": "dataframename.get('rowlabel', 'columnlabel')"
+        },
+        {
+          "zh": "dataframename.cell('rowlabel', 'columnlabel')",
+          "en": "dataframename.cell('rowlabel', 'columnlabel')"
+        },
+        {
+          "zh": "dataframename.value('rowlabel', 'columnlabel')",
+          "en": "dataframename.value('rowlabel', 'columnlabel')"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用dataframename.at['rowlabel', 'columnlabel']可以访问特定的单元格。",
+        "en": "Use dataframename.at['rowlabel', 'columnlabel'] to access a specific cell."
+      },
+      "topic": "dataframe-access",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 21",
+        "section": "dataframename.at['rowlabel','columnlabel']"
+      }
+    },
+    {
+      "id": "pd-010",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "如何获取DataFrame每列的平均值？",
+        "en": "How to get the mean of each column in a DataFrame?"
+      },
+      "options": [
+        {
+          "zh": "dataframename.mean()",
+          "en": "dataframename.mean()"
+        },
+        {
+          "zh": "dataframename.average()",
+          "en": "dataframename.average()"
+        },
+        {
+          "zh": "dataframename.avg()",
+          "en": "dataframename.avg()"
+        },
+        {
+          "zh": "dataframename.centre()",
+          "en": "dataframename.centre()"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用dataframename.mean()方法可以计算DataFrame每列的平均值。",
+        "en": "Use the dataframename.mean() method to calculate the mean of each column in a DataFrame."
+      },
+      "topic": "dataframe-statistics",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 22",
+        "section": "dataframename.mean() gives mean of each column"
+      }
+    },
+    {
+      "id": "pd-011",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何获取DataFrame每行的平均值？",
+        "en": "How to get the mean of each row in a DataFrame?"
+      },
+      "options": [
+        {
+          "zh": "dataframename.T.mean()",
+          "en": "dataframename.T.mean()"
+        },
+        {
+          "zh": "dataframename.mean(axis=1)",
+          "en": "dataframename.mean(axis=1)"
+        },
+        {
+          "zh": "dataframename.row_mean()",
+          "en": "dataframename.row_mean()"
+        },
+        {
+          "zh": "dataframename.mean_rows()",
+          "en": "dataframename.mean_rows()"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用dataframename.T.mean()可以获取DataFrame每行的平均值，通过转置后计算列的平均值。",
+        "en": "Use dataframename.T.mean() to get the mean of each row in a DataFrame by transposing and then calculating column means."
+      },
+      "topic": "dataframe-statistics",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 22",
+        "section": "dataframename.T.mean() gives mean of each row"
+      }
+    },
+    {
+      "id": "pd-012",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "如何控制Pandas的显示精度？",
+        "en": "How to control Pandas display precision?"
+      },
+      "options": [
+        {
+          "zh": "pd.set_option('precision', 2)",
+          "en": "pd.set_option('precision', 2)"
+        },
+        {
+          "zh": "pd.set_precision(2)",
+          "en": "pd.set_precision(2)"
+        },
+        {
+          "zh": "pd.precision(2)",
+          "en": "pd.precision(2)"
+        },
+        {
+          "zh": "pd.display_precision(2)",
+          "en": "pd.display_precision(2)"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用pd.set_option('precision', 2)可以设置显示精度为小数点后2位。",
+        "en": "Use pd.set_option('precision', 2) to set display precision to 2 decimal places."
+      },
+      "topic": "pandas-options",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 22",
+        "section": "Use the set_option function: pd.set_option('precision', 2)"
+      }
+    },
+    {
+      "id": "pd-013",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "DataFrame的转置是什么？",
+        "en": "What is the transpose of a DataFrame?"
+      },
+      "options": [
+        {
+          "zh": "dataframename.T",
+          "en": "dataframename.T"
+        },
+        {
+          "zh": "dataframename.transpose()",
+          "en": "dataframename.transpose()"
+        },
+        {
+          "zh": "dataframename.flip()",
+          "en": "dataframename.flip()"
+        },
+        {
+          "zh": "dataframename.rotate()",
+          "en": "dataframename.rotate()"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用dataframename.T属性可以获取DataFrame的转置视图。",
+        "en": "Use the dataframename.T attribute to get a transposed view of the DataFrame."
+      },
+      "topic": "dataframe-transposing",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 22",
+        "section": "dataframename.T is a transposed view"
+      }
+    },
+    {
+      "id": "pd-014",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何对DataFrame进行布尔索引？",
+        "en": "How to perform boolean indexing on a DataFrame?"
+      },
+      "options": [
+        {
+          "zh": "dataframename[dataframename > 90]",
+          "en": "dataframename[dataframename > 90]"
+        },
+        {
+          "zh": "dataframename.filter(dataframename > 90)",
+          "en": "dataframename.filter(dataframename > 90)"
+        },
+        {
+          "zh": "dataframename.select(dataframename > 90)",
+          "en": "dataframename.select(dataframename > 90)"
+        },
+        {
+          "zh": "dataframename.where(dataframename > 90)",
+          "en": "dataframename.where(dataframename > 90)"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用dataframename[condition]可以进行布尔索引，筛选满足条件的行。",
+        "en": "Use dataframename[condition] to perform boolean indexing and filter rows that meet the condition."
+      },
+      "topic": "dataframe-indexing",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 20",
+        "section": "dataframename[dataframename > 90]"
+      }
+    },
+    {
+      "id": "pd-015",
+      "type": "multiple-choice",
+      "difficulty": "hard",
+      "question": {
+        "zh": "以下代码的输出是什么？\n\n```python\nimport pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})\nprint(df.loc[0:1, 'A'])\n```",
+        "en": "What is the output of the following code?\n\n```python\nimport pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})\nprint(df.loc[0:1, 'A'])\n```"
+      },
+      "options": [
+        {
+          "zh": "0    1\n1    2\nName: A, dtype: int64",
+          "en": "0    1\n1    2\nName: A, dtype: int64"
+        },
+        {
+          "zh": "0    1\nName: A, dtype: int64",
+          "en": "0    1\nName: A, dtype: int64"
+        },
+        {
+          "zh": "1    2\n2    3\nName: A, dtype: int64",
+          "en": "1    2\n2    3\nName: A, dtype: int64"
+        },
+        {
+          "zh": "Error",
+          "en": "Error"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "df.loc[0:1, 'A']选择第0行到第1行的A列，包括第1行（loc是包含的）。",
+        "en": "df.loc[0:1, 'A'] selects rows 0 to 1 of column A, including row 1 (loc is inclusive)."
+      },
+      "topic": "dataframe-indexing",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 19",
+        "section": "dataframename.loc['label1':'label2'] includes label2!"
+      }
+    }
+  ]
+}

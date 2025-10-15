@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Inter", system-ui, sans-serif;
+  }
+
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-algonquin-600 hover:bg-algonquin-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200 flex items-center;
+  }
+
+  .btn-secondary {
+    @apply bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-4 rounded-lg transition-colors duration-200 flex items-center;
+  }
+
+  .btn-outline {
+    @apply border-2 border-algonquin-600 text-algonquin-600 hover:bg-algonquin-600 hover:text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200 flex items-center;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-sm border border-gray-200 p-6;
+  }
+
+  .input-field {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-algonquin-500 focus:border-transparent;
+  }
+
+  .question-card {
+    @apply bg-white rounded-xl shadow-sm border border-gray-200 p-6 mb-4;
+  }
+
+  .option-button {
+    @apply w-full text-left p-4 border border-gray-200 rounded-lg hover:border-algonquin-500 hover:bg-algonquin-50 transition-colors duration-200;
+  }
+
+  .option-button.selected {
+    @apply border-algonquin-500 bg-algonquin-50;
+  }
+
+  .option-button.correct {
+    @apply border-green-500 bg-green-50;
+  }
+
+  .option-button.incorrect {
+    @apply border-red-500 bg-red-50;
+  }
+
+  .progress-bar {
+    @apply w-full bg-gray-200 rounded-full h-2;
+  }
+
+  .progress-fill {
+    @apply bg-algonquin-600 h-2 rounded-full transition-all duration-300;
+  }
+
+  .timer {
+    @apply text-lg font-mono font-semibold;
+  }
+
+  .timer.warning {
+    @apply text-orange-600;
+  }
+
+  .timer.danger {
+    @apply text-red-600;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}

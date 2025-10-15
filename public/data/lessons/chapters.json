@@ -1,0 +1,234 @@
+{
+  "chapters": [
+    {
+      "id": "python-basics",
+      "title": {
+        "zh": "Python基础",
+        "en": "Python Basics"
+      },
+      "description": {
+        "zh": "Python编程语言的基础概念和语法",
+        "en": "Basic concepts and syntax of Python programming language"
+      },
+      "topics": [
+        {
+          "id": "variables-data-types",
+          "title": {
+            "zh": "变量和数据类型",
+            "en": "Variables and Data Types"
+          },
+          "content": {
+            "zh": "学习Python中的变量声明、基本数据类型（int, float, string, boolean）以及类型转换。",
+            "en": "Learn variable declaration, basic data types (int, float, string, boolean) and type conversion in Python."
+          }
+        },
+        {
+          "id": "control-structures",
+          "title": {
+            "zh": "控制结构",
+            "en": "Control Structures"
+          },
+          "content": {
+            "zh": "掌握if-else条件语句、for和while循环的使用方法。",
+            "en": "Master the use of if-else conditional statements, for and while loops."
+          }
+        },
+        {
+          "id": "functions",
+          "title": {
+            "zh": "函数",
+            "en": "Functions"
+          },
+          "content": {
+            "zh": "学习如何定义和调用函数，参数传递和返回值。",
+            "en": "Learn how to define and call functions, parameter passing and return values."
+          }
+        },
+        {
+          "id": "data-structures",
+          "title": {
+            "zh": "数据结构",
+            "en": "Data Structures"
+          },
+          "content": {
+            "zh": "掌握列表、元组、字典和集合的使用方法。",
+            "en": "Master the use of lists, tuples, dictionaries and sets."
+          }
+        }
+      ]
+    },
+    {
+      "id": "numpy",
+      "title": {
+        "zh": "NumPy数组计算",
+        "en": "NumPy Array Computing"
+      },
+      "description": {
+        "zh": "NumPy库的基础知识和数组操作",
+        "en": "Fundamentals of NumPy library and array operations"
+      },
+      "topics": [
+        {
+          "id": "numpy-basics",
+          "title": {
+            "zh": "NumPy数组",
+            "en": "NumPy Arrays"
+          },
+          "content": {
+            "zh": "学习创建和操作NumPy数组，包括一维、二维和多维数组。",
+            "en": "Learn to create and manipulate NumPy arrays, including 1D, 2D and multi-dimensional arrays."
+          }
+        },
+        {
+          "id": "array-operations",
+          "title": {
+            "zh": "数组运算",
+            "en": "Array Operations"
+          },
+          "content": {
+            "zh": "掌握数组的数学运算、广播机制和向量化操作。",
+            "en": "Master mathematical operations on arrays, broadcasting and vectorized operations."
+          }
+        },
+        {
+          "id": "array-indexing",
+          "title": {
+            "zh": "数组索引和切片",
+            "en": "Array Indexing and Slicing"
+          },
+          "content": {
+            "zh": "学习数组的索引、切片和布尔索引技术。",
+            "en": "Learn array indexing, slicing and boolean indexing techniques."
+          }
+        }
+      ]
+    },
+    {
+      "id": "pandas",
+      "title": {
+        "zh": "Pandas数据分析",
+        "en": "Pandas Data Analysis"
+      },
+      "description": {
+        "zh": "Pandas库用于数据分析和处理",
+        "en": "Pandas library for data analysis and processing"
+      },
+      "topics": [
+        {
+          "id": "dataframes-series",
+          "title": {
+            "zh": "DataFrame和Series",
+            "en": "DataFrame and Series"
+          },
+          "content": {
+            "zh": "学习Pandas的核心数据结构DataFrame和Series的创建和基本操作。",
+            "en": "Learn to create and perform basic operations on Pandas core data structures DataFrame and Series."
+          }
+        },
+        {
+          "id": "data-manipulation",
+          "title": {
+            "zh": "数据操作",
+            "en": "Data Manipulation"
+          },
+          "content": {
+            "zh": "掌握数据的筛选、排序、分组和聚合操作。",
+            "en": "Master data filtering, sorting, grouping and aggregation operations."
+          }
+        },
+        {
+          "id": "data-cleaning",
+          "title": {
+            "zh": "数据清洗",
+            "en": "Data Cleaning"
+          },
+          "content": {
+            "zh": "学习处理缺失值、重复数据和异常值的方法。",
+            "en": "Learn methods for handling missing values, duplicate data and outliers."
+          }
+        }
+      ]
+    },
+    {
+      "id": "matplotlib",
+      "title": {
+        "zh": "Matplotlib数据可视化",
+        "en": "Matplotlib Data Visualization"
+      },
+      "description": {
+        "zh": "使用Matplotlib进行数据可视化和图表绘制",
+        "en": "Data visualization and chart plotting using Matplotlib"
+      },
+      "topics": [
+        {
+          "id": "basic-plotting",
+          "title": {
+            "zh": "基础绘图",
+            "en": "Basic Plotting"
+          },
+          "content": {
+            "zh": "学习创建线图、散点图、柱状图等基础图表类型。",
+            "en": "Learn to create basic chart types like line plots, scatter plots, bar charts, etc."
+          }
+        },
+        {
+          "id": "plot-customization",
+          "title": {
+            "zh": "图表定制",
+            "en": "Plot Customization"
+          },
+          "content": {
+            "zh": "掌握图表的标题、标签、颜色、样式等定制化设置。",
+            "en": "Master customization settings for plot titles, labels, colors, styles, etc."
+          }
+        },
+        {
+          "id": "subplots-multiple-plots",
+          "title": {
+            "zh": "子图和多图",
+            "en": "Subplots and Multiple Plots"
+          },
+          "content": {
+            "zh": "学习创建子图和在同一画布上绘制多个图表。",
+            "en": "Learn to create subplots and plot multiple charts on the same canvas."
+          }
+        }
+      ]
+    },
+    {
+      "id": "ai-intro",
+      "title": {
+        "zh": "AI入门",
+        "en": "AI Introduction"
+      },
+      "description": {
+        "zh": "人工智能基础概念和Python在AI中的应用",
+        "en": "Basic concepts of artificial intelligence and Python applications in AI"
+      },
+      "topics": [
+        {
+          "id": "ai-concepts",
+          "title": {
+            "zh": "AI基本概念",
+            "en": "Basic AI Concepts"
+          },
+          "content": {
+            "zh": "了解机器学习、深度学习的基本概念和应用领域。",
+            "en": "Understand basic concepts of machine learning, deep learning and their application areas."
+          }
+        },
+        {
+          "id": "python-ai-libraries",
+          "title": {
+            "zh": "Python AI库",
+            "en": "Python AI Libraries"
+          },
+          "content": {
+            "zh": "介绍常用的Python AI库如scikit-learn、TensorFlow、PyTorch等。",
+            "en": "Introduction to common Python AI libraries such as scikit-learn, TensorFlow, PyTorch, etc."
+          }
+        }
+      ]
+    }
+  ]
+}

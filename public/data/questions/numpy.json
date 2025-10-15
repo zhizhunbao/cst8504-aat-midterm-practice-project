@@ -1,0 +1,575 @@
+{
+  "chapter": "numpy",
+  "questions": [
+    {
+      "id": "np-001",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "NumPy数组和Python列表的根本区别是什么？",
+        "en": "What's the fundamental difference between a NumPy array and a Python list?"
+      },
+      "options": [
+        {
+          "zh": "NumPy数组更快，支持向量化操作",
+          "en": "NumPy arrays are faster and support vectorized operations"
+        },
+        {
+          "zh": "Python列表更快",
+          "en": "Python lists are faster"
+        },
+        {
+          "zh": "没有区别",
+          "en": "No difference"
+        },
+        {
+          "zh": "NumPy数组只能存储数字",
+          "en": "NumPy arrays can only store numbers"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "NumPy数组比Python列表更快，支持向量化操作，是数据科学的核心。",
+        "en": "NumPy arrays are faster than Python lists and support vectorized operations, forming the core of data science."
+      },
+      "topic": "numpy-arrays",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 7",
+        "section": "What's the fundamental difference between a Numpy array and a python list?"
+      }
+    },
+    {
+      "id": "np-002",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "如何从列表创建数组？",
+        "en": "How can we create an array from a list?"
+      },
+      "options": [
+        {
+          "zh": "np.array([1, 2, 3])",
+          "en": "np.array([1, 2, 3])"
+        },
+        {
+          "zh": "np.create([1, 2, 3])",
+          "en": "np.create([1, 2, 3])"
+        },
+        {
+          "zh": "np.make([1, 2, 3])",
+          "en": "np.make([1, 2, 3])"
+        },
+        {
+          "zh": "np.new([1, 2, 3])",
+          "en": "np.new([1, 2, 3])"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用np.array()函数可以从列表创建NumPy数组。",
+        "en": "Use the np.array() function to create a NumPy array from a list."
+      },
+      "topic": "array-creation",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 7",
+        "section": "How can we create an array from a list?"
+      }
+    },
+    {
+      "id": "np-003",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "如何找到数组元素的数据类型？",
+        "en": "How can we find the datatype of the elements of an array?"
+      },
+      "options": [
+        {
+          "zh": "array.dtype",
+          "en": "array.dtype"
+        },
+        {
+          "zh": "array.type",
+          "en": "array.type"
+        },
+        {
+          "zh": "array.datatype",
+          "en": "array.datatype"
+        },
+        {
+          "zh": "array.kind",
+          "en": "array.kind"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用array.dtype属性可以获取数组元素的数据类型。",
+        "en": "Use the array.dtype attribute to get the datatype of array elements."
+      },
+      "topic": "array-attributes",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 7",
+        "section": "How can we find the datatype of the elements of an array?"
+      }
+    },
+    {
+      "id": "np-004",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何将数组转换为不同的形状？",
+        "en": "How can we transform an array into a different shape?"
+      },
+      "options": [
+        {
+          "zh": "array.reshape()",
+          "en": "array.reshape()"
+        },
+        {
+          "zh": "array.change()",
+          "en": "array.change()"
+        },
+        {
+          "zh": "array.modify()",
+          "en": "array.modify()"
+        },
+        {
+          "zh": "array.convert()",
+          "en": "array.convert()"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用array.reshape()方法可以改变数组的形状。",
+        "en": "Use the array.reshape() method to change the shape of an array."
+      },
+      "topic": "array-reshaping",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 7",
+        "section": "How can we transform an array into a different shape?"
+      }
+    },
+    {
+      "id": "np-005",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何创建具有均匀分布浮点值的数组？",
+        "en": "How can we create an array with evenly spaced floating point values?"
+      },
+      "options": [
+        {
+          "zh": "np.linspace(0, 10, 5)",
+          "en": "np.linspace(0, 10, 5)"
+        },
+        {
+          "zh": "np.arange(0, 10, 0.5)",
+          "en": "np.arange(0, 10, 0.5)"
+        },
+        {
+          "zh": "np.range(0, 10, 5)",
+          "en": "np.range(0, 10, 5)"
+        },
+        {
+          "zh": "np.space(0, 10, 5)",
+          "en": "np.space(0, 10, 5)"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "np.linspace()函数创建指定范围内均匀分布的浮点值数组。",
+        "en": "The np.linspace() function creates an array of evenly spaced floating point values in a specified range."
+      },
+      "topic": "array-creation",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 7",
+        "section": "How can we create an array with evenly spaced floating point values?"
+      }
+    },
+    {
+      "id": "np-006",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "如何创建一个包含5个零的数组？",
+        "en": "How to create an array with 5 zeros?"
+      },
+      "options": [
+        {
+          "zh": "np.zeros(5)",
+          "en": "np.zeros(5)"
+        },
+        {
+          "zh": "np.ones(5)",
+          "en": "np.ones(5)"
+        },
+        {
+          "zh": "np.empty(5)",
+          "en": "np.empty(5)"
+        },
+        {
+          "zh": "np.full(5, 0)",
+          "en": "np.full(5, 0)"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "np.zeros(5)创建一个包含5个零的数组。",
+        "en": "np.zeros(5) creates an array with 5 zeros."
+      },
+      "topic": "array-creation",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 6",
+        "section": "np.zeros() (default float64)"
+      }
+    },
+    {
+      "id": "np-007",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "如何创建一个包含5个1的数组？",
+        "en": "How to create an array with 5 ones?"
+      },
+      "options": [
+        {
+          "zh": "np.ones(5)",
+          "en": "np.ones(5)"
+        },
+        {
+          "zh": "np.zeros(5)",
+          "en": "np.zeros(5)"
+        },
+        {
+          "zh": "np.empty(5)",
+          "en": "np.empty(5)"
+        },
+        {
+          "zh": "np.full(5, 1)",
+          "en": "np.full(5, 1)"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "np.ones(5)创建一个包含5个1的数组。",
+        "en": "np.ones(5) creates an array with 5 ones."
+      },
+      "topic": "array-creation",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 6",
+        "section": "np.ones() (default float64)"
+      }
+    },
+    {
+      "id": "np-008",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "NumPy中的广播(Broadcasting)是什么意思？",
+        "en": "What does Broadcasting mean with numpy arrays?"
+      },
+      "options": [
+        {
+          "zh": "将标量值扩展到与数组相同的形状",
+          "en": "Extending scalar values to the same shape as arrays"
+        },
+        {
+          "zh": "压缩数组",
+          "en": "Compressing arrays"
+        },
+        {
+          "zh": "转置数组",
+          "en": "Transposing arrays"
+        },
+        {
+          "zh": "连接数组",
+          "en": "Concatenating arrays"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "广播允许NumPy对不同形状的数组执行操作，将标量值扩展到与数组相同的形状。",
+        "en": "Broadcasting allows NumPy to perform operations on arrays of different shapes, extending scalar values to the same shape as arrays."
+      },
+      "topic": "broadcasting",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 13",
+        "section": "What does Broadcasting mean with numpy arrays?"
+      }
+    },
+    {
+      "id": "np-009",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "如何找到数组中所有值的平均值？",
+        "en": "How can we find the average of all the values in an array?"
+      },
+      "options": [
+        {
+          "zh": "array.mean()",
+          "en": "array.mean()"
+        },
+        {
+          "zh": "array.average()",
+          "en": "array.average()"
+        },
+        {
+          "zh": "array.avg()",
+          "en": "array.avg()"
+        },
+        {
+          "zh": "array.centre()",
+          "en": "array.centre()"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用array.mean()方法可以计算数组中所有值的平均值。",
+        "en": "Use the array.mean() method to calculate the average of all values in an array."
+      },
+      "topic": "array-calculations",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 13",
+        "section": "How can we find the average of all the values in an array?"
+      }
+    },
+    {
+      "id": "np-010",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何找到数组所有行的平均值？",
+        "en": "How can we find the average value of all the rows of an array?"
+      },
+      "options": [
+        {
+          "zh": "array.mean(axis=1)",
+          "en": "array.mean(axis=1)"
+        },
+        {
+          "zh": "array.mean(axis=0)",
+          "en": "array.mean(axis=0)"
+        },
+        {
+          "zh": "array.mean(rows=True)",
+          "en": "array.mean(rows=True)"
+        },
+        {
+          "zh": "array.row_mean()",
+          "en": "array.row_mean()"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用array.mean(axis=1)可以计算每行的平均值。",
+        "en": "Use array.mean(axis=1) to calculate the mean of each row."
+      },
+      "topic": "array-calculations",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 13",
+        "section": "How can we find the average value of all the rows of an array?"
+      }
+    },
+    {
+      "id": "np-011",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何找到数组所有列的平均值？",
+        "en": "How can we find the average value of all the columns of an array?"
+      },
+      "options": [
+        {
+          "zh": "array.mean(axis=0)",
+          "en": "array.mean(axis=0)"
+        },
+        {
+          "zh": "array.mean(axis=1)",
+          "en": "array.mean(axis=1)"
+        },
+        {
+          "zh": "array.mean(columns=True)",
+          "en": "array.mean(columns=True)"
+        },
+        {
+          "zh": "array.col_mean()",
+          "en": "array.col_mean()"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用array.mean(axis=0)可以计算每列的平均值。",
+        "en": "Use array.mean(axis=0) to calculate the mean of each column."
+      },
+      "topic": "array-calculations",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 13",
+        "section": "How can we find the average value of all the columns of an array?"
+      }
+    },
+    {
+      "id": "np-012",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何提取前3行前3列的数据？",
+        "en": "How can we extract the first 3 columns of the first 3 rows?"
+      },
+      "options": [
+        {
+          "zh": "array[0:3, 0:3]",
+          "en": "array[0:3, 0:3]"
+        },
+        {
+          "zh": "array[1:4, 1:4]",
+          "en": "array[1:4, 1:4]"
+        },
+        {
+          "zh": "array[0:2, 0:2]",
+          "en": "array[0:2, 0:2]"
+        },
+        {
+          "zh": "array[1:3, 1:3]",
+          "en": "array[1:3, 1:3]"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用array[0:3, 0:3]可以提取前3行前3列的数据（索引0到2）。",
+        "en": "Use array[0:3, 0:3] to extract the first 3 rows and first 3 columns (indices 0 to 2)."
+      },
+      "topic": "array-indexing",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 13",
+        "section": "How can we extract the first 3 columns of the first 3 rows?"
+      }
+    },
+    {
+      "id": "np-013",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "如何找到二维数组的转置？",
+        "en": "How can we find the transposition of a 2-dimensional array?"
+      },
+      "options": [
+        {
+          "zh": "array.T",
+          "en": "array.T"
+        },
+        {
+          "zh": "array.transpose()",
+          "en": "array.transpose()"
+        },
+        {
+          "zh": "array.flip()",
+          "en": "array.flip()"
+        },
+        {
+          "zh": "array.rotate()",
+          "en": "array.rotate()"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用array.T属性可以获取数组的转置。",
+        "en": "Use the array.T attribute to get the transpose of an array."
+      },
+      "topic": "array-transposing",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 13",
+        "section": "How can we find the transposition of a 2-dimensional array?"
+      }
+    },
+    {
+      "id": "np-014",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "以下代码的输出是什么？\n\n```python\nimport numpy as np\na = np.array([1, 2, 3])\nb = np.array([4, 5, 6])\nprint(a + b)\n```",
+        "en": "What is the output of the following code?\n\n```python\nimport numpy as np\na = np.array([1, 2, 3])\nb = np.array([4, 5, 6])\nprint(a + b)\n```"
+      },
+      "options": [
+        {
+          "zh": "[5 7 9]",
+          "en": "[5 7 9]"
+        },
+        {
+          "zh": "[1 2 3 4 5 6]",
+          "en": "[1 2 3 4 5 6]"
+        },
+        {
+          "zh": "Error",
+          "en": "Error"
+        },
+        {
+          "zh": "[1 2 3]",
+          "en": "[1 2 3]"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "NumPy数组支持元素级操作，相同位置的元素相加得到[5 7 9]。",
+        "en": "NumPy arrays support element-wise operations, adding elements at the same positions gives [5 7 9]."
+      },
+      "topic": "array-operations",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 8",
+        "section": "Array operators"
+      }
+    },
+    {
+      "id": "np-015",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何创建数组的深拷贝？",
+        "en": "How to create a deep copy of an array?"
+      },
+      "options": [
+        {
+          "zh": "array.copy()",
+          "en": "array.copy()"
+        },
+        {
+          "zh": "array.clone()",
+          "en": "array.clone()"
+        },
+        {
+          "zh": "array.duplicate()",
+          "en": "array.duplicate()"
+        },
+        {
+          "zh": "array.deepcopy()",
+          "en": "array.deepcopy()"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用array.copy()方法可以创建数组的深拷贝。",
+        "en": "Use the array.copy() method to create a deep copy of an array."
+      },
+      "topic": "array-copying",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 11",
+        "section": "7.12 Deep Copies"
+      }
+    }
+  ]
+}
