@@ -1,0 +1,949 @@
+{
+  "chapter": "matplotlib",
+  "questions": [
+    {
+      "id": "plt-001",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "如何导入matplotlib.pyplot模块？",
+        "en": "How to import the matplotlib.pyplot module?"
+      },
+      "options": [
+        {
+          "zh": "import matplotlib.pyplot as plt",
+          "en": "import matplotlib.pyplot as plt"
+        },
+        {
+          "zh": "import matplotlib as plt",
+          "en": "import matplotlib as plt"
+        },
+        {
+          "zh": "from matplotlib import pyplot",
+          "en": "from matplotlib import pyplot"
+        },
+        {
+          "zh": "import pyplot as plt",
+          "en": "import pyplot as plt"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "标准的matplotlib导入方式是 'import matplotlib.pyplot as plt'，这是最常用的约定。",
+        "en": "The standard matplotlib import is 'import matplotlib.pyplot as plt', which is the most common convention."
+      },
+      "topic": "matplotlib-basics",
+      "source": {
+        "type": "lecture",
+        "reference": "Python_Textbook_extracted.txt - Line 13588",
+        "section": "Matplotlib Introduction"
+      }
+    },
+    {
+      "id": "plt-002",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "如何创建一个简单的线图？",
+        "en": "How to create a simple line plot?"
+      },
+      "options": [
+        {
+          "zh": "plt.plot(x, y)",
+          "en": "plt.plot(x, y)"
+        },
+        {
+          "zh": "plt.line(x, y)",
+          "en": "plt.line(x, y)"
+        },
+        {
+          "zh": "plt.draw(x, y)",
+          "en": "plt.draw(x, y)"
+        },
+        {
+          "zh": "plt.create(x, y)",
+          "en": "plt.create(x, y)"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "plt.plot(x, y) 是创建线图的基本函数，x和y分别是x轴和y轴的数据。",
+        "en": "plt.plot(x, y) is the basic function to create a line plot, where x and y are the data for x-axis and y-axis respectively."
+      },
+      "topic": "basic-plotting",
+      "source": {
+        "type": "lecture",
+        "reference": "Python Data Science Handbook - Simple Line Plots",
+        "section": "Basic Plotting"
+      }
+    },
+    {
+      "id": "plt-003",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何显示图表？",
+        "en": "How to display a plot?"
+      },
+      "options": [
+        {
+          "zh": "plt.show()",
+          "en": "plt.show()"
+        },
+        {
+          "zh": "plt.display()",
+          "en": "plt.display()"
+        },
+        {
+          "zh": "plt.render()",
+          "en": "plt.render()"
+        },
+        {
+          "zh": "plt.view()",
+          "en": "plt.view()"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "plt.show() 用于显示创建的图表。",
+        "en": "plt.show() is used to display the created plot."
+      },
+      "topic": "basic-plotting",
+      "source": {
+        "type": "lecture",
+        "reference": "Python_Textbook_extracted.txt - Line 13876",
+        "section": "Displaying Plots"
+      }
+    },
+    {
+      "id": "plt-004",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何创建散点图？",
+        "en": "How to create a scatter plot?"
+      },
+      "options": [
+        {
+          "zh": "plt.scatter(x, y)",
+          "en": "plt.scatter(x, y)"
+        },
+        {
+          "zh": "plt.plot(x, y, 'o')",
+          "en": "plt.plot(x, y, 'o')"
+        },
+        {
+          "zh": "plt.dots(x, y)",
+          "en": "plt.dots(x, y)"
+        },
+        {
+          "zh": "plt.points(x, y)",
+          "en": "plt.points(x, y)"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "plt.scatter(x, y) 专门用于创建散点图，也可以使用 plt.plot(x, y, 'o') 来创建。",
+        "en": "plt.scatter(x, y) is specifically for creating scatter plots, though plt.plot(x, y, 'o') can also be used."
+      },
+      "topic": "scatter-plots",
+      "source": {
+        "type": "lecture",
+        "reference": "Python Data Science Handbook - Simple Scatter Plots",
+        "section": "Scatter Plots"
+      }
+    },
+    {
+      "id": "plt-005",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何设置图表的标题？",
+        "en": "How to set the title of a plot?"
+      },
+      "options": [
+        {
+          "zh": "plt.title('My Title')",
+          "en": "plt.title('My Title')"
+        },
+        {
+          "zh": "plt.set_title('My Title')",
+          "en": "plt.set_title('My Title')"
+        },
+        {
+          "zh": "plt.heading('My Title')",
+          "en": "plt.heading('My Title')"
+        },
+        {
+          "zh": "plt.label('My Title')",
+          "en": "plt.label('My Title')"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "plt.title('My Title') 用于设置图表的标题。",
+        "en": "plt.title('My Title') is used to set the title of the plot."
+      },
+      "topic": "plot-customization",
+      "source": {
+        "type": "lecture",
+        "reference": "Python_Textbook_extracted.txt - Line 13688",
+        "section": "Plot Customization"
+      }
+    },
+    {
+      "id": "plt-006",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何设置x轴和y轴的标签？",
+        "en": "How to set x-axis and y-axis labels?"
+      },
+      "options": [
+        {
+          "zh": "plt.xlabel('X Label'); plt.ylabel('Y Label')",
+          "en": "plt.xlabel('X Label'); plt.ylabel('Y Label')"
+        },
+        {
+          "zh": "plt.set_xlabel('X Label'); plt.set_ylabel('Y Label')",
+          "en": "plt.set_xlabel('X Label'); plt.set_ylabel('Y Label')"
+        },
+        {
+          "zh": "plt.xlabel('X Label'); plt.ylabel('Y Label')",
+          "en": "plt.xlabel('X Label'); plt.ylabel('Y Label')"
+        },
+        {
+          "zh": "plt.label_x('X Label'); plt.label_y('Y Label')",
+          "en": "plt.label_x('X Label'); plt.label_y('Y Label')"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "plt.xlabel() 和 plt.ylabel() 分别用于设置x轴和y轴的标签。",
+        "en": "plt.xlabel() and plt.ylabel() are used to set x-axis and y-axis labels respectively."
+      },
+      "topic": "plot-customization",
+      "source": {
+        "type": "lecture",
+        "reference": "Python_Textbook_extracted.txt - Line 13692",
+        "section": "Axis Labels"
+      }
+    },
+    {
+      "id": "plt-007",
+      "type": "multiple-choice",
+      "difficulty": "hard",
+      "question": {
+        "zh": "如何创建子图（subplots）？",
+        "en": "How to create subplots?"
+      },
+      "options": [
+        {
+          "zh": "fig, axes = plt.subplots(nrows=2, ncols=2)",
+          "en": "fig, axes = plt.subplots(nrows=2, ncols=2)"
+        },
+        {
+          "zh": "fig, axes = plt.subplot(2, 2)",
+          "en": "fig, axes = plt.subplot(2, 2)"
+        },
+        {
+          "zh": "fig, axes = plt.create_subplots(2, 2)",
+          "en": "fig, axes = plt.create_subplots(2, 2)"
+        },
+        {
+          "zh": "fig, axes = plt.multiplot(2, 2)",
+          "en": "fig, axes = plt.multiplot(2, 2)"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "plt.subplots(nrows=2, ncols=2) 创建一个2x2的子图网格，返回figure对象和axes数组。",
+        "en": "plt.subplots(nrows=2, ncols=2) creates a 2x2 grid of subplots and returns a figure object and an array of axes."
+      },
+      "topic": "subplots",
+      "source": {
+        "type": "lecture",
+        "reference": "Python_Textbook_extracted.txt - Line 24273",
+        "section": "Subplots"
+      }
+    },
+    {
+      "id": "plt-008",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何清除当前轴的内容？",
+        "en": "How to clear the current axes?"
+      },
+      "options": [
+        {
+          "zh": "plt.cla()",
+          "en": "plt.cla()"
+        },
+        {
+          "zh": "plt.clear()",
+          "en": "plt.clear()"
+        },
+        {
+          "zh": "plt.reset()",
+          "en": "plt.reset()"
+        },
+        {
+          "zh": "plt.clean()",
+          "en": "plt.clean()"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "plt.cla() 用于清除当前轴的内容，但保留轴本身。",
+        "en": "plt.cla() is used to clear the current axes content while keeping the axes themselves."
+      },
+      "topic": "plot-management",
+      "source": {
+        "type": "lecture",
+        "reference": "Python_Textbook_extracted.txt - Line 13767",
+        "section": "Plot Management"
+      }
+    },
+    {
+      "id": "plt-009",
+      "type": "multiple-choice",
+      "difficulty": "hard",
+      "question": {
+        "zh": "如何设置y轴的范围？",
+        "en": "How to set the range of the y-axis?"
+      },
+      "options": [
+        {
+          "zh": "plt.ylim(bottom, top)",
+          "en": "plt.ylim(bottom, top)"
+        },
+        {
+          "zh": "plt.set_ylim(bottom, top)",
+          "en": "plt.set_ylim(bottom, top)"
+        },
+        {
+          "zh": "plt.y_range(bottom, top)",
+          "en": "plt.y_range(bottom, top)"
+        },
+        {
+          "zh": "plt.yscale(bottom, top)",
+          "en": "plt.yscale(bottom, top)"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "plt.ylim(bottom, top) 用于设置y轴的范围，bottom是最小值，top是最大值。",
+        "en": "plt.ylim(bottom, top) is used to set the range of the y-axis, where bottom is the minimum value and top is the maximum value."
+      },
+      "topic": "axis-customization",
+      "source": {
+        "type": "lecture",
+        "reference": "Python_Textbook_extracted.txt - Line 13713",
+        "section": "Axis Customization"
+      }
+    },
+    {
+      "id": "plt-010",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何创建柱状图？",
+        "en": "How to create a bar chart?"
+      },
+      "options": [
+        {
+          "zh": "plt.bar(x, height)",
+          "en": "plt.bar(x, height)"
+        },
+        {
+          "zh": "plt.barplot(x, height)",
+          "en": "plt.barplot(x, height)"
+        },
+        {
+          "zh": "plt.column(x, height)",
+          "en": "plt.column(x, height)"
+        },
+        {
+          "zh": "plt.vertical(x, height)",
+          "en": "plt.vertical(x, height)"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "plt.bar(x, height) 用于创建柱状图，x是x轴位置，height是柱子的高度。",
+        "en": "plt.bar(x, height) is used to create a bar chart, where x is the x-axis position and height is the height of the bars."
+      },
+      "topic": "bar-charts",
+      "source": {
+        "type": "lecture",
+        "reference": "Python_Textbook_extracted.txt - Line 31104",
+        "section": "Bar Charts"
+      }
+    },
+    {
+      "id": "plt-011",
+      "type": "multiple-choice",
+      "difficulty": "hard",
+      "question": {
+        "zh": "如何调整子图之间的间距？",
+        "en": "How to adjust spacing between subplots?"
+      },
+      "options": [
+        {
+          "zh": "plt.tight_layout()",
+          "en": "plt.tight_layout()"
+        },
+        {
+          "zh": "plt.adjust_layout()",
+          "en": "plt.adjust_layout()"
+        },
+        {
+          "zh": "plt.space_subplots()",
+          "en": "plt.space_subplots()"
+        },
+        {
+          "zh": "plt.pad_subplots()",
+          "en": "plt.pad_subplots()"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "plt.tight_layout() 自动调整子图参数以提供更好的布局。",
+        "en": "plt.tight_layout() automatically adjusts subplot parameters to give better layout."
+      },
+      "topic": "subplot-layout",
+      "source": {
+        "type": "lecture",
+        "reference": "Python_Textbook_extracted.txt - Line 24313",
+        "section": "Subplot Layout"
+      }
+    },
+    {
+      "id": "plt-012",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何创建直方图？",
+        "en": "How to create a histogram?"
+      },
+      "options": [
+        {
+          "zh": "plt.hist(data)",
+          "en": "plt.hist(data)"
+        },
+        {
+          "zh": "plt.histogram(data)",
+          "en": "plt.histogram(data)"
+        },
+        {
+          "zh": "plt.frequency(data)",
+          "en": "plt.frequency(data)"
+        },
+        {
+          "zh": "plt.distribution(data)",
+          "en": "plt.distribution(data)"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "plt.hist(data) 用于创建直方图，显示数据的分布情况。",
+        "en": "plt.hist(data) is used to create a histogram showing the distribution of data."
+      },
+      "topic": "histograms",
+      "source": {
+        "type": "lecture",
+        "reference": "Python_Textbook_extracted.txt - Line 22414",
+        "section": "Histograms"
+      }
+    },
+    {
+      "id": "plt-013",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "如何设置图表的图例？",
+        "en": "How to set the legend of a plot?"
+      },
+      "options": [
+        {
+          "zh": "plt.legend()",
+          "en": "plt.legend()"
+        },
+        {
+          "zh": "plt.set_legend()",
+          "en": "plt.set_legend()"
+        },
+        {
+          "zh": "plt.show_legend()",
+          "en": "plt.show_legend()"
+        },
+        {
+          "zh": "plt.add_legend()",
+          "en": "plt.add_legend()"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "plt.legend() 用于显示图例，标识不同的数据系列。",
+        "en": "plt.legend() is used to display a legend that identifies different data series."
+      },
+      "topic": "legends",
+      "source": {
+        "type": "lecture",
+        "reference": "Matplotlib Documentation",
+        "section": "Legends"
+      }
+    },
+    {
+      "id": "plt-014",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何保存图表到文件？",
+        "en": "How to save a plot to a file?"
+      },
+      "options": [
+        {
+          "zh": "plt.savefig('filename.png')",
+          "en": "plt.savefig('filename.png')"
+        },
+        {
+          "zh": "plt.save('filename.png')",
+          "en": "plt.save('filename.png')"
+        },
+        {
+          "zh": "plt.export('filename.png')",
+          "en": "plt.export('filename.png')"
+        },
+        {
+          "zh": "plt.write('filename.png')",
+          "en": "plt.write('filename.png')"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "plt.savefig('filename.png') 用于将当前图表保存为文件，支持多种格式如PNG、PDF、SVG等。",
+        "en": "plt.savefig('filename.png') is used to save the current plot to a file, supporting various formats like PNG, PDF, SVG, etc."
+      },
+      "topic": "saving-plots",
+      "source": {
+        "type": "lecture",
+        "reference": "Matplotlib Documentation",
+        "section": "Saving Plots"
+      }
+    },
+    {
+      "id": "plt-015",
+      "type": "multiple-choice",
+      "difficulty": "hard",
+      "question": {
+        "zh": "如何创建动画图表？",
+        "en": "How to create animated plots?"
+      },
+      "options": [
+        {
+          "zh": "使用matplotlib.animation.FuncAnimation",
+          "en": "Using matplotlib.animation.FuncAnimation"
+        },
+        {
+          "zh": "使用matplotlib.animation.Animation",
+          "en": "Using matplotlib.animation.Animation"
+        },
+        {
+          "zh": "使用matplotlib.animation.Movie",
+          "en": "Using matplotlib.animation.Movie"
+        },
+        {
+          "zh": "使用matplotlib.animation.Video",
+          "en": "Using matplotlib.animation.Video"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "matplotlib.animation.FuncAnimation 是创建动画图表的主要类，可以基于函数更新图表内容。",
+        "en": "matplotlib.animation.FuncAnimation is the main class for creating animated plots, which can update plot content based on functions."
+      },
+      "topic": "animations",
+      "source": {
+        "type": "lecture",
+        "reference": "Python_Textbook_extracted.txt - Line 1345",
+        "section": "Animations"
+      }
+    },
+    {
+      "id": "plt-016",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何设置图表的网格？",
+        "en": "How to set the grid of a plot?"
+      },
+      "options": [
+        {
+          "zh": "plt.grid(True)",
+          "en": "plt.grid(True)"
+        },
+        {
+          "zh": "plt.show_grid(True)",
+          "en": "plt.show_grid(True)"
+        },
+        {
+          "zh": "plt.display_grid(True)",
+          "en": "plt.display_grid(True)"
+        },
+        {
+          "zh": "plt.enable_grid(True)",
+          "en": "plt.enable_grid(True)"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "plt.grid(True) 用于在图表中显示网格线，有助于读取数据值。",
+        "en": "plt.grid(True) is used to display grid lines in the plot, which helps in reading data values."
+      },
+      "topic": "grid-customization",
+      "source": {
+        "type": "lecture",
+        "reference": "Matplotlib Documentation",
+        "section": "Grid Customization"
+      }
+    },
+    {
+      "id": "plt-017",
+      "type": "multiple-choice",
+      "difficulty": "hard",
+      "question": {
+        "zh": "如何设置图表的样式？",
+        "en": "How to set the style of a plot?"
+      },
+      "options": [
+        {
+          "zh": "plt.style.use('seaborn')",
+          "en": "plt.style.use('seaborn')"
+        },
+        {
+          "zh": "plt.set_style('seaborn')",
+          "en": "plt.set_style('seaborn')"
+        },
+        {
+          "zh": "plt.apply_style('seaborn')",
+          "en": "plt.apply_style('seaborn')"
+        },
+        {
+          "zh": "plt.use_style('seaborn')",
+          "en": "plt.use_style('seaborn')"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "plt.style.use('seaborn') 用于设置图表的整体样式，matplotlib提供了多种预定义样式。",
+        "en": "plt.style.use('seaborn') is used to set the overall style of the plot, and matplotlib provides various predefined styles."
+      },
+      "topic": "plot-styles",
+      "source": {
+        "type": "lecture",
+        "reference": "Matplotlib Documentation",
+        "section": "Plot Styles"
+      }
+    },
+    {
+      "id": "plt-018",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何设置线条的颜色和样式？",
+        "en": "How to set the color and style of a line?"
+      },
+      "options": [
+        {
+          "zh": "plt.plot(x, y, 'r--')",
+          "en": "plt.plot(x, y, 'r--')"
+        },
+        {
+          "zh": "plt.plot(x, y, color='red', linestyle='--')",
+          "en": "plt.plot(x, y, color='red', linestyle='--')"
+        },
+        {
+          "zh": "plt.plot(x, y, 'red', 'dashed')",
+          "en": "plt.plot(x, y, 'red', 'dashed')"
+        },
+        {
+          "zh": "plt.plot(x, y, style='red-dashed')",
+          "en": "plt.plot(x, y, style='red-dashed')"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "可以使用简写形式 'r--'（红色虚线）或完整参数 color='red', linestyle='--' 来设置线条样式。",
+        "en": "You can use shorthand notation 'r--' (red dashed line) or full parameters color='red', linestyle='--' to set line styles."
+      },
+      "topic": "line-styling",
+      "source": {
+        "type": "lecture",
+        "reference": "Matplotlib Documentation",
+        "section": "Line Styling"
+      }
+    },
+    {
+      "id": "plt-019",
+      "type": "multiple-choice",
+      "difficulty": "hard",
+      "question": {
+        "zh": "如何创建3D图表？",
+        "en": "How to create 3D plots?"
+      },
+      "options": [
+        {
+          "zh": "from mpl_toolkits.mplot3d import Axes3D",
+          "en": "from mpl_toolkits.mplot3d import Axes3D"
+        },
+        {
+          "zh": "from matplotlib import Axes3D",
+          "en": "from matplotlib import Axes3D"
+        },
+        {
+          "zh": "from matplotlib.3d import Axes3D",
+          "en": "from matplotlib.3d import Axes3D"
+        },
+        {
+          "zh": "from matplotlib.tools import Axes3D",
+          "en": "from matplotlib.tools import Axes3D"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "需要从 mpl_toolkits.mplot3d 导入 Axes3D 来创建3D图表。",
+        "en": "You need to import Axes3D from mpl_toolkits.mplot3d to create 3D plots."
+      },
+      "topic": "3d-plots",
+      "source": {
+        "type": "lecture",
+        "reference": "Matplotlib Documentation",
+        "section": "3D Plotting"
+      }
+    },
+    {
+      "id": "plt-020",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何设置图表的大小？",
+        "en": "How to set the size of a plot?"
+      },
+      "options": [
+        {
+          "zh": "plt.figure(figsize=(10, 6))",
+          "en": "plt.figure(figsize=(10, 6))"
+        },
+        {
+          "zh": "plt.set_size(10, 6)",
+          "en": "plt.set_size(10, 6)"
+        },
+        {
+          "zh": "plt.resize(10, 6)",
+          "en": "plt.resize(10, 6)"
+        },
+        {
+          "zh": "plt.dimensions(10, 6)",
+          "en": "plt.dimensions(10, 6)"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "plt.figure(figsize=(10, 6)) 用于设置图表的大小，单位为英寸。",
+        "en": "plt.figure(figsize=(10, 6)) is used to set the size of the plot in inches."
+      },
+      "topic": "figure-size",
+      "source": {
+        "type": "lecture",
+        "reference": "Matplotlib Documentation",
+        "section": "Figure Size"
+      }
+    },
+    {
+      "id": "plt-021",
+      "type": "coding",
+      "difficulty": "easy",
+      "question": {
+        "zh": "创建正弦函数线图 y = sin(x)，x范围0到2π",
+        "en": "Create a sine function line plot y = sin(x) where x ranges from 0 to 2π"
+      },
+      "hint": {
+        "zh": "输入：x轴数据(0到2π)，y轴数据(sin(x))\n输出：带标题、标签和网格的正弦波图",
+        "en": "Input: x-axis data (0 to 2π), y-axis data (sin(x))\nOutput: Sine wave plot with title, labels and grid"
+      },
+      "codeTemplate": "import matplotlib.pyplot as plt\nimport numpy as np\n\n# 数据已准备好\nx = np.linspace(0, 2*np.pi, 100)\ny = np.sin(x)\n\n# 请完成以下代码：\n# 1. 绘制线图\nplt.plot(x, y)\n# 2. 添加标题 'Sine Function'\nplt.title('Sine Function')\n# 3. 添加x轴标签 'x'\nplt.xlabel('x')\n# 4. 添加y轴标签 'sin(x)'\nplt.ylabel('sin(x)')\n# 5. 添加网格\nplt.grid(True)\n# 6. 显示图像\nplt.show()",
+      "expected_output": "A sine wave line plot with title, axis labels, and grid",
+      "testCases": [
+        {
+          "input": "",
+          "expected_output": "sin(x) line plot from 0 to 2π with grid"
+        }
+      ],
+      "solution": "import matplotlib.pyplot as plt\nimport numpy as np\n\n# 生成x值\nx = np.linspace(0, 2*np.pi, 100)\n\n# 计算正弦函数值\ny = np.sin(x)\n\n# 绘制线图\nplt.plot(x, y)\n\n# 添加标题、标签和网格\nplt.title('Sine Function')\nplt.xlabel('x')\nplt.ylabel('sin(x)')\nplt.grid(True)\n\n# 显示图像\nplt.show()",
+      "explanation": {
+        "zh": "基于Python Data Science Handbook第4.01节的内容，使用np.linspace生成x轴数据，np.sin计算正弦值，plt.plot绘制线图，plt.title、plt.xlabel、plt.ylabel添加标题和标签，plt.grid(True)添加网格，plt.show显示图像。",
+        "en": "Based on Python Data Science Handbook Section 4.01, use np.linspace to generate x-axis data, np.sin to calculate sine values, plt.plot to draw line plot, plt.title, plt.xlabel, plt.ylabel to add title and labels, plt.grid(True) to add grid, plt.show to display the plot."
+      },
+      "topic": "simple-line-plots",
+      "source": {
+        "type": "lecture",
+        "reference": "Python Data Science Handbook - 04.01 Simple Line Plots",
+        "section": "https://jakevdp.github.io/PythonDataScienceHandbook/04.01-simple-line-plots.html"
+      }
+    },
+    {
+      "id": "plt-022",
+      "type": "coding",
+      "difficulty": "medium",
+      "question": {
+        "zh": "创建正弦和余弦函数对比图，使用不同颜色和线型",
+        "en": "Create a comparison plot of sine and cosine functions with different colors and line styles"
+      },
+      "hint": {
+        "zh": "输入：x轴数据，sin(x)和cos(x)数据\n输出：双线对比图，包含图例和网格",
+        "en": "Input: x-axis data, sin(x) and cos(x) data\nOutput: Dual-line comparison plot with legend and grid"
+      },
+      "codeTemplate": "import matplotlib.pyplot as plt\nimport numpy as np\n\n# 数据已准备好\nx = np.linspace(0, 2*np.pi, 100)\ny1 = np.sin(x)\ny2 = np.cos(x)\n\n# 请完成以下代码：\n# 1. 绘制正弦函数（红色实线，标签'sin(x)'）\n# 2. 绘制余弦函数（蓝色虚线，标签'cos(x)'）\n# 3. 添加标题 'Sine and Cosine Functions'\n# 4. 添加x轴标签 'x'\n# 5. 添加y轴标签 'y'\n# 6. 添加图例\n# 7. 添加网格\n# 8. 显示图像",
+      "expected_output": "A line plot with both sine and cosine functions, different colors and line styles, with legend and grid",
+      "testCases": [
+        {
+          "input": "",
+          "expected_output": "Sine and cosine comparison line plot with legend and grid"
+        }
+      ],
+      "solution": "import matplotlib.pyplot as plt\nimport numpy as np\n\n# 生成x值\nx = np.linspace(0, 2*np.pi, 100)\n\n# 计算正弦和余弦函数值\ny1 = np.sin(x)\ny2 = np.cos(x)\n\n# 绘制线图\nplt.plot(x, y1, 'r-', label='sin(x)')\nplt.plot(x, y2, 'b--', label='cos(x)')\n\n# 添加标题、标签、图例和网格\nplt.title('Sine and Cosine Functions')\nplt.xlabel('x')\nplt.ylabel('y')\nplt.legend()\nplt.grid(True)\n\n# 显示图像\nplt.show()",
+      "explanation": {
+        "zh": "基于Python Data Science Handbook第4.01节的内容，使用不同的颜色和线型参数：'r-'表示红色实线，'b--'表示蓝色虚线。label参数为图例提供标签，plt.legend()显示图例，plt.grid(True)添加网格。",
+        "en": "Based on Python Data Science Handbook Section 4.01, use different color and line style parameters: 'r-' for red solid line, 'b--' for blue dashed line. The label parameter provides labels for the legend, plt.legend() displays the legend, plt.grid(True) adds grid."
+      },
+      "topic": "simple-line-plots",
+      "source": {
+        "type": "lecture",
+        "reference": "Python Data Science Handbook - 04.01 Simple Line Plots",
+        "section": "https://jakevdp.github.io/PythonDataScienceHandbook/04.01-simple-line-plots.html"
+      }
+    },
+    {
+      "id": "plt-023",
+      "type": "coding",
+      "difficulty": "medium",
+      "question": {
+        "zh": "创建2x2子图布局，绘制四个不同函数",
+        "en": "Create a 2x2 subplot layout with four different functions"
+      },
+      "hint": {
+        "zh": "输入：x轴数据，四个函数数据\n输出：2x2子图网格，每个子图有标题和网格",
+        "en": "Input: x-axis data, four function datasets\nOutput: 2x2 subplot grid, each with title and grid"
+      },
+      "codeTemplate": "import matplotlib.pyplot as plt\nimport numpy as np\n\n# 创建x数据\nx = np.linspace(0, 2*np.pi, 100)\n\n# 创建2x2子图\n# TODO: 创建子图\n\n# 第一个子图：正弦函数\n# TODO: 选择第一个子图\n# TODO: 绘制正弦函数\n# TODO: 设置标题\n# TODO: 添加网格\n\n# 第二个子图：余弦函数\n# TODO: 选择第二个子图\n# TODO: 绘制余弦函数\n# TODO: 设置标题\n# TODO: 添加网格\n\n# 第三个子图：正切函数\n# TODO: 选择第三个子图\n# TODO: 绘制正切函数\n# TODO: 设置标题\n# TODO: 添加网格\n\n# 第四个子图：指数函数\n# TODO: 选择第四个子图\n# TODO: 绘制指数函数\n# TODO: 设置标题\n# TODO: 添加网格\n\n# 调整布局并显示\n# TODO: 调整子图间距\n# TODO: 显示图像",
+      "expected_output": "A 2x2 subplot layout with four different function plots, each with title and grid",
+      "testCases": [
+        {
+          "input": "",
+          "expected_output": "Four subplots with different mathematical functions"
+        }
+      ],
+      "solution": "import matplotlib.pyplot as plt\nimport numpy as np\n\n# 创建x数据\nx = np.linspace(0, 2*np.pi, 100)\n\n# 创建2x2子图\nfig, axes = plt.subplots(2, 2, figsize=(12, 8))\n\n# 第一个子图：正弦函数\naxes[0, 0].plot(x, np.sin(x))\naxes[0, 0].set_title('Sine Function')\naxes[0, 0].grid(True)\n\n# 第二个子图：余弦函数\naxes[0, 1].plot(x, np.cos(x))\naxes[0, 1].set_title('Cosine Function')\naxes[0, 1].grid(True)\n\n# 第三个子图：正切函数\naxes[1, 0].plot(x, np.tan(x))\naxes[1, 0].set_title('Tangent Function')\naxes[1, 0].grid(True)\n\n# 第四个子图：指数函数\naxes[1, 1].plot(x, np.exp(x/5))\naxes[1, 1].set_title('Exponential Function')\naxes[1, 1].grid(True)\n\n# 调整布局并显示\nplt.tight_layout()\nplt.show()",
+      "explanation": {
+        "zh": "使用plt.subplots(2, 2)创建2x2子图网格，返回figure对象和axes数组。通过axes[i, j]访问每个子图，使用set_title()设置标题，grid(True)添加网格，tight_layout()自动调整间距。",
+        "en": "Use plt.subplots(2, 2) to create a 2x2 subplot grid, returning a figure object and axes array. Access each subplot via axes[i, j], use set_title() to set titles, grid(True) to add grids, tight_layout() to automatically adjust spacing."
+      },
+      "topic": "subplots-multiple-plots",
+      "source": {
+        "type": "practice",
+        "reference": "Subplots Exercise",
+        "section": "Multiple Subplots"
+      }
+    },
+    {
+      "id": "plt-024",
+      "type": "coding",
+      "difficulty": "medium",
+      "question": {
+        "zh": "基于Python Data Science Handbook第4.02节，创建一个简单的散点图。生成100个随机数据点，x和y坐标都在0-1之间，使用不同的颜色和大小来表示数据点。",
+        "en": "Based on Python Data Science Handbook Section 4.02, create a simple scatter plot. Generate 100 random data points with x and y coordinates between 0-1, using different colors and sizes to represent data points."
+      },
+      "codeTemplate": "import matplotlib.pyplot as plt\nimport numpy as np\n\n# 设置随机种子\nnp.random.seed(0)\n\n# 生成随机数据\nn_points = 100\nx = np.random.rand(n_points)\ny = np.random.rand(n_points)\ncolors = np.random.rand(n_points)\nsizes = 1000 * np.random.rand(n_points)\n\n# 创建散点图\n# TODO: 创建散点图，使用颜色和大小映射\n\n# 设置标题和标签\n# TODO: 添加标题\n# TODO: 添加x轴标签\n# TODO: 添加y轴标签\n\n# 显示图像\n# TODO: 显示图像",
+      "expected_output": "A scatter plot with color and size mapping showing random data points",
+      "testCases": [
+        {
+          "input": "",
+          "expected_output": "Scatter plot with 100 random points, color and size coded"
+        }
+      ],
+      "solution": "import matplotlib.pyplot as plt\nimport numpy as np\n\n# 设置随机种子\nnp.random.seed(0)\n\n# 生成随机数据\nn_points = 100\nx = np.random.rand(n_points)\ny = np.random.rand(n_points)\ncolors = np.random.rand(n_points)\nsizes = 1000 * np.random.rand(n_points)\n\n# 创建散点图\nplt.scatter(x, y, c=colors, s=sizes, alpha=0.5, cmap='viridis')\n\n# 设置标题和标签\nplt.title('Simple Scatter Plot')\nplt.xlabel('x')\nplt.ylabel('y')\n\n# 显示图像\nplt.show()",
+      "explanation": {
+        "zh": "基于Python Data Science Handbook第4.02节的内容，使用plt.scatter()创建散点图，c参数指定颜色映射，s参数指定点的大小，alpha参数控制透明度，cmap参数设置颜色映射方案。",
+        "en": "Based on Python Data Science Handbook Section 4.02, use plt.scatter() to create scatter plot, c parameter specifies color mapping, s parameter specifies point sizes, alpha parameter controls transparency, cmap parameter sets color mapping scheme."
+      },
+      "topic": "simple-scatter-plots",
+      "source": {
+        "type": "lecture",
+        "reference": "Python Data Science Handbook - 04.02 Simple Scatter Plots",
+        "section": "https://jakevdp.github.io/PythonDataScienceHandbook/04.02-simple-scatter-plots.html"
+      }
+    },
+    {
+      "id": "plt-025",
+      "type": "coding",
+      "difficulty": "hard",
+      "question": {
+        "zh": "基于Python Data Science Handbook第4.02节，创建一个带颜色条的散点图。生成随机数据点，使用颜色映射来表示第三个维度的数据，并添加颜色条显示颜色与数值的对应关系。",
+        "en": "Based on Python Data Science Handbook Section 4.02, create a scatter plot with colorbar. Generate random data points, use color mapping to represent a third dimension of data, and add a colorbar to show the correspondence between colors and values."
+      },
+      "codeTemplate": "import matplotlib.pyplot as plt\nimport numpy as np\n\n# 设置随机种子\nnp.random.seed(0)\n\n# 生成随机数据\nn_points = 100\nx = np.random.rand(n_points)\ny = np.random.rand(n_points)\ncolors = np.random.rand(n_points)\n\n# 创建散点图\n# TODO: 创建散点图，使用颜色映射\n\n# 添加颜色条\n# TODO: 添加颜色条\n\n# 设置标题和标签\n# TODO: 添加标题\n# TODO: 添加x轴标签\n# TODO: 添加y轴标签\n\n# 显示图像\n# TODO: 显示图像",
+      "expected_output": "A scatter plot with colorbar showing color mapping for third dimension",
+      "testCases": [
+        {
+          "input": "",
+          "expected_output": "Scatter plot with colorbar showing color-value correspondence"
+        }
+      ],
+      "solution": "import matplotlib.pyplot as plt\nimport numpy as np\n\n# 设置随机种子\nnp.random.seed(0)\n\n# 生成随机数据\nn_points = 100\nx = np.random.rand(n_points)\ny = np.random.rand(n_points)\ncolors = np.random.rand(n_points)\n\n# 创建散点图\nscatter = plt.scatter(x, y, c=colors, cmap='viridis')\n\n# 添加颜色条\nplt.colorbar(scatter)\n\n# 设置标题和标签\nplt.title('Scatter Plot with Colorbar')\nplt.xlabel('x')\nplt.ylabel('y')\n\n# 显示图像\nplt.show()",
+      "explanation": {
+        "zh": "基于Python Data Science Handbook第4.02节的内容，使用plt.scatter()创建散点图，c参数指定颜色映射，cmap参数设置颜色映射方案。plt.colorbar()添加颜色条显示颜色与数值的对应关系。",
+        "en": "Based on Python Data Science Handbook Section 4.02, use plt.scatter() to create scatter plot, c parameter specifies color mapping, cmap parameter sets color mapping scheme. plt.colorbar() adds a colorbar showing the correspondence between colors and values."
+      },
+      "topic": "simple-scatter-plots",
+      "source": {
+        "type": "lecture",
+        "reference": "Python Data Science Handbook - 04.02 Simple Scatter Plots",
+        "section": "https://jakevdp.github.io/PythonDataScienceHandbook/04.02-simple-scatter-plots.html"
+      }
+    },
+    {
+      "id": "plt-plot-demo",
+      "type": "coding",
+      "difficulty": "easy",
+      "question": {
+        "zh": "创建一个简单的线图，展示正弦函数。使用提供的代码模板，点击'生成图表'按钮查看可视化效果。",
+        "en": "Create a simple line plot showing the sine function. Use the provided code template and click 'Generate Plot' to see the visualization."
+      },
+      "hint": {
+        "zh": "这是一个演示题目，展示matplotlib图表生成功能。输入代码后点击'生成图表'按钮查看效果。",
+        "en": "This is a demo question showcasing matplotlib plot generation. Enter code and click 'Generate Plot' to see the effect."
+      },
+      "codeTemplate": "import matplotlib.pyplot as plt\nimport numpy as np\n\n# 创建数据\nx = np.linspace(0, 2*np.pi, 100)\ny = np.sin(x)\n\n# 绘制图表\nplt.figure(figsize=(8, 6))\nplt.plot(x, y, 'b-', linewidth=2, label='sin(x)')\nplt.title('Sine Function Demo')\nplt.xlabel('x (radians)')\nplt.ylabel('sin(x)')\nplt.grid(True, alpha=0.3)\nplt.legend()\nplt.show()",
+      "expected_output": "A sine wave plot with title, labels, grid, and legend",
+      "testCases": [
+        {
+          "input": "",
+          "expected_output": "Sine function visualization with proper formatting"
+        }
+      ],
+      "solution": "import matplotlib.pyplot as plt\nimport numpy as np\n\n# 创建数据\nx = np.linspace(0, 2*np.pi, 100)\ny = np.sin(x)\n\n# 绘制图表\nplt.figure(figsize=(8, 6))\nplt.plot(x, y, 'b-', linewidth=2, label='sin(x)')\nplt.title('Sine Function Demo')\nplt.xlabel('x (radians)')\nplt.ylabel('sin(x)')\nplt.grid(True, alpha=0.3)\nplt.legend()\nplt.show()",
+      "explanation": {
+        "zh": "这是一个演示题目，展示matplotlib的基本绘图功能。使用plt.figure()设置图像大小，plt.plot()绘制线图，plt.title()、plt.xlabel()、plt.ylabel()添加标题和标签，plt.grid()添加网格，plt.legend()显示图例，plt.show()显示图像。",
+        "en": "This is a demo question showcasing basic matplotlib plotting functionality. Use plt.figure() to set figure size, plt.plot() to draw line plot, plt.title(), plt.xlabel(), plt.ylabel() to add title and labels, plt.grid() to add grid, plt.legend() to show legend, plt.show() to display the plot."
+      },
+      "topic": "matplotlib-demo",
+      "source": {
+        "type": "demo",
+        "reference": "Matplotlib Demo",
+        "section": "Basic Plotting Demo"
+      }
+    }
+  ]
+}

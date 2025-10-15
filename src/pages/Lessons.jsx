@@ -21,7 +21,7 @@ const Lessons = () => {
 
   useEffect(() => {
     // Load chapters data
-    fetch("/src/data/lessons/chapters.json")
+    fetch("/data/lessons/chapters.json")
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP ${response.status}: ${response.statusText}`);

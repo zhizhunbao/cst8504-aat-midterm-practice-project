@@ -1,0 +1,349 @@
+{
+  "chapter": "ai-intro",
+  "questions": [
+    {
+      "id": "ai-001",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "人工智能（AI）的主要目标是什么？",
+        "en": "What is the main goal of Artificial Intelligence (AI)?"
+      },
+      "options": [
+        {
+          "zh": "让计算机能够像人类一样思考和决策",
+          "en": "Enable computers to think and make decisions like humans"
+        },
+        {
+          "zh": "让计算机运行得更快",
+          "en": "Make computers run faster"
+        },
+        {
+          "zh": "让计算机存储更多数据",
+          "en": "Make computers store more data"
+        },
+        {
+          "zh": "让计算机连接网络",
+          "en": "Make computers connect to networks"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "AI的主要目标是让计算机能够模拟人类的智能行为，包括学习、推理、感知和决策。",
+        "en": "The main goal of AI is to enable computers to simulate human intelligent behavior, including learning, reasoning, perception, and decision-making."
+      },
+      "topic": "ai-fundamentals",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_04_Midterm_Review.pdf - Slide 5",
+        "section": "Introduction to AI"
+      }
+    },
+    {
+      "id": "ai-002",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "机器学习是人工智能的一个子领域，它的主要特点是什么？",
+        "en": "Machine Learning is a subfield of AI. What is its main characteristic?"
+      },
+      "options": [
+        {
+          "zh": "通过数据学习模式，无需明确编程",
+          "en": "Learn patterns from data without explicit programming"
+        },
+        {
+          "zh": "需要程序员编写所有规则",
+          "en": "Requires programmers to write all rules"
+        },
+        {
+          "zh": "只能处理数字数据",
+          "en": "Can only process numerical data"
+        },
+        {
+          "zh": "不需要任何数据",
+          "en": "Does not require any data"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "机器学习通过分析数据来自动发现模式，而不需要程序员明确指定如何处理每种情况。",
+        "en": "Machine learning automatically discovers patterns by analyzing data, without requiring programmers to explicitly specify how to handle each situation."
+      },
+      "topic": "machine-learning",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_04_Midterm_Review.pdf - Slide 12",
+        "section": "Machine Learning Overview"
+      }
+    },
+    {
+      "id": "ai-003",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "监督学习、无监督学习和强化学习的主要区别是什么？",
+        "en": "What are the main differences between supervised, unsupervised, and reinforcement learning?"
+      },
+      "options": [
+        {
+          "zh": "监督学习有标签数据，无监督学习无标签数据，强化学习通过奖励学习",
+          "en": "Supervised learning has labeled data, unsupervised learning has no labels, reinforcement learning learns through rewards"
+        },
+        {
+          "zh": "监督学习比无监督学习更准确",
+          "en": "Supervised learning is more accurate than unsupervised learning"
+        },
+        {
+          "zh": "无监督学习不需要数据",
+          "en": "Unsupervised learning doesn't need data"
+        },
+        {
+          "zh": "强化学习只用于游戏",
+          "en": "Reinforcement learning is only used for games"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "监督学习使用带标签的训练数据，无监督学习发现数据中的隐藏模式，强化学习通过与环境交互获得奖励来学习。",
+        "en": "Supervised learning uses labeled training data, unsupervised learning discovers hidden patterns in data, reinforcement learning learns by interacting with environment and receiving rewards."
+      },
+      "topic": "machine-learning",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_04_Midterm_Review.pdf - Slide 15",
+        "section": "Types of Machine Learning"
+      }
+    },
+    {
+      "id": "ai-004",
+      "type": "fill-in-blank",
+      "difficulty": "easy",
+      "question": {
+        "zh": "深度学习是机器学习的一个子集，它主要使用___来模拟人脑的神经网络。",
+        "en": "Deep learning is a subset of machine learning that primarily uses ___ to simulate the neural networks of the human brain."
+      },
+      "answer": "多层神经网络",
+      "explanation": {
+        "zh": "深度学习使用多层神经网络来学习数据的复杂模式。",
+        "en": "Deep learning uses multi-layer neural networks to learn complex patterns in data."
+      },
+      "topic": "deep-learning",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_04_Midterm_Review.pdf - Slide 20",
+        "section": "Deep Learning Introduction"
+      }
+    },
+    {
+      "id": "ai-005",
+      "type": "multiple-choice",
+      "difficulty": "hard",
+      "question": {
+        "zh": "在机器学习中，过拟合（Overfitting）是指什么？",
+        "en": "In machine learning, what does overfitting refer to?"
+      },
+      "options": [
+        {
+          "zh": "模型在训练数据上表现很好，但在新数据上表现差",
+          "en": "Model performs well on training data but poorly on new data"
+        },
+        {
+          "zh": "模型训练时间太长",
+          "en": "Model takes too long to train"
+        },
+        {
+          "zh": "模型使用了太多数据",
+          "en": "Model uses too much data"
+        },
+        {
+          "zh": "模型没有学习到任何模式",
+          "en": "Model doesn't learn any patterns"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "过拟合是指模型过度学习了训练数据的细节和噪声，导致泛化能力差。",
+        "en": "Overfitting occurs when a model learns the details and noise in training data too well, resulting in poor generalization."
+      },
+      "topic": "model-evaluation",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_04_Midterm_Review.pdf - Page 4",
+        "section": "Model Evaluation and Validation"
+      }
+    },
+    {
+      "id": "ai-006",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "数据预处理在机器学习中的重要性是什么？",
+        "en": "What is the importance of data preprocessing in machine learning?"
+      },
+      "options": [
+        {
+          "zh": "提高模型性能和数据质量",
+          "en": "Improve model performance and data quality"
+        },
+        {
+          "zh": "减少计算时间",
+          "en": "Reduce computation time"
+        },
+        {
+          "zh": "增加数据量",
+          "en": "Increase data volume"
+        },
+        {
+          "zh": "简化模型结构",
+          "en": "Simplify model structure"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "数据预处理包括清洗、标准化、特征选择等步骤，对模型性能有重要影响。",
+        "en": "Data preprocessing includes cleaning, normalization, feature selection, etc., which significantly impacts model performance."
+      },
+      "topic": "data-preprocessing",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_04_Midterm_Review.pdf - Slide 18",
+        "section": "Data Preprocessing"
+      }
+    },
+    {
+      "id": "ai-007",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "以下哪个是机器学习中常用的评估指标？",
+        "en": "Which of the following is a commonly used evaluation metric in machine learning?"
+      },
+      "options": [
+        {
+          "zh": "准确率（Accuracy）",
+          "en": "Accuracy"
+        },
+        {
+          "zh": "文件大小",
+          "en": "File size"
+        },
+        {
+          "zh": "代码行数",
+          "en": "Lines of code"
+        },
+        {
+          "zh": "内存使用量",
+          "en": "Memory usage"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "准确率是机器学习中最基本的评估指标，表示正确预测的比例。",
+        "en": "Accuracy is the most basic evaluation metric in machine learning, representing the proportion of correct predictions."
+      },
+      "topic": "model-evaluation",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_04_Midterm_Review.pdf - Page 7",
+        "section": "Evaluation Metrics"
+      }
+    },
+    {
+      "id": "ai-008",
+      "type": "fill-in-blank",
+      "difficulty": "medium",
+      "question": {
+        "zh": "在机器学习中，___是指将数据集分为训练集、验证集和测试集的过程。",
+        "en": "In machine learning, ___ refers to the process of dividing a dataset into training, validation, and test sets."
+      },
+      "answer": "数据分割",
+      "explanation": {
+        "zh": "数据分割是机器学习中的重要步骤，用于训练、调优和评估模型。",
+        "en": "Data splitting is an important step in machine learning for training, tuning, and evaluating models."
+      },
+      "topic": "model-evaluation",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_04_Midterm_Review.pdf - Page 1",
+        "section": "Train-Validation-Test Split"
+      }
+    },
+    {
+      "id": "ai-009",
+      "type": "multiple-choice",
+      "difficulty": "hard",
+      "question": {
+        "zh": "特征工程在机器学习中的作用是什么？",
+        "en": "What is the role of feature engineering in machine learning?"
+      },
+      "options": [
+        {
+          "zh": "创建、选择和转换特征以提高模型性能",
+          "en": "Create, select, and transform features to improve model performance"
+        },
+        {
+          "zh": "减少数据存储空间",
+          "en": "Reduce data storage space"
+        },
+        {
+          "zh": "加快模型训练速度",
+          "en": "Speed up model training"
+        },
+        {
+          "zh": "简化模型代码",
+          "en": "Simplify model code"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "特征工程通过创建新特征、选择重要特征和转换现有特征来改善模型性能。",
+        "en": "Feature engineering improves model performance by creating new features, selecting important features, and transforming existing features."
+      },
+      "topic": "feature-engineering",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_04_Midterm_Review.pdf - Page 9",
+        "section": "Feature Engineering"
+      }
+    },
+    {
+      "id": "ai-010",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "交叉验证（Cross-validation）的主要目的是什么？",
+        "en": "What is the main purpose of cross-validation?"
+      },
+      "options": [
+        {
+          "zh": "更可靠地评估模型性能",
+          "en": "More reliably evaluate model performance"
+        },
+        {
+          "zh": "减少训练时间",
+          "en": "Reduce training time"
+        },
+        {
+          "zh": "增加数据量",
+          "en": "Increase data volume"
+        },
+        {
+          "zh": "简化模型结构",
+          "en": "Simplify model structure"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "交叉验证通过多次训练和测试来获得更稳定和可靠的模型性能评估。",
+        "en": "Cross-validation provides more stable and reliable model performance evaluation through multiple training and testing iterations."
+      },
+      "topic": "model-evaluation",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_04_Midterm_Review.pdf - Page 11",
+        "section": "Cross-Validation"
+      }
+    }
+  ]
+}

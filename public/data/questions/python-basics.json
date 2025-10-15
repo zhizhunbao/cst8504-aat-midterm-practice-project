@@ -1,0 +1,575 @@
+{
+  "chapter": "python-basics",
+  "questions": [
+    {
+      "id": "py-001",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "三引号字符串的主要用途是什么？",
+        "en": "What is the main purpose of triple-quoted strings?"
+      },
+      "options": [
+        {
+          "zh": "创建单行字符串",
+          "en": "Create single-line strings"
+        },
+        {
+          "zh": "创建多行字符串和文档字符串",
+          "en": "Create multi-line strings and docstrings"
+        },
+        {
+          "zh": "创建数字",
+          "en": "Create numbers"
+        },
+        {
+          "zh": "创建列表",
+          "en": "Create lists"
+        }
+      ],
+      "correct": 1,
+      "explanation": {
+        "zh": "三引号字符串主要用于创建多行字符串和文档字符串(docstrings)。",
+        "en": "Triple-quoted strings are mainly used for creating multi-line strings and docstrings."
+      },
+      "topic": "strings",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_02_Python_Primer.md - Page 3",
+        "section": "2.5 triple quoted strings"
+      }
+    },
+    {
+      "id": "py-002",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "如何将字符串'78'转换为整数？",
+        "en": "How to convert the string '78' to an integer?"
+      },
+      "options": [
+        {
+          "zh": "int('78')",
+          "en": "int('78')"
+        },
+        {
+          "zh": "str(78)",
+          "en": "str(78)"
+        },
+        {
+          "zh": "float('78')",
+          "en": "float('78')"
+        },
+        {
+          "zh": "convert('78')",
+          "en": "convert('78')"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用int()函数可以将字符串转换为整数。",
+        "en": "Use the int() function to convert a string to an integer."
+      },
+      "topic": "type-conversion",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_02_Python_Primer.md - Page 3",
+        "section": "input and converting string to int"
+      }
+    },
+    {
+      "id": "py-003",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "Python中参数传递的方式是什么？",
+        "en": "How are arguments passed in Python?"
+      },
+      "options": [
+        {
+          "zh": "按值传递",
+          "en": "Pass by value"
+        },
+        {
+          "zh": "按引用传递",
+          "en": "Pass by reference"
+        },
+        {
+          "zh": "按值传递，但对象是引用",
+          "en": "Pass by value, but objects are references"
+        },
+        {
+          "zh": "按指针传递",
+          "en": "Pass by pointer"
+        }
+      ],
+      "correct": 2,
+      "explanation": {
+        "zh": "Python中参数是按值传递的，但对于可变对象（如列表、字典），传递的是对象的引用。",
+        "en": "In Python, arguments are passed by value, but for mutable objects (like lists, dictionaries), the reference to the object is passed."
+      },
+      "topic": "function-parameters",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_02_Python_Primer.md - Page 6",
+        "section": "How are arguments passed in Python?"
+      }
+    },
+    {
+      "id": "py-004",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "Python元组是可变的吗？",
+        "en": "Are Python tuples mutable?"
+      },
+      "options": [
+        {
+          "zh": "是，可以修改",
+          "en": "Yes, they can be modified"
+        },
+        {
+          "zh": "否，不可变",
+          "en": "No, they are immutable"
+        },
+        {
+          "zh": "取决于内容",
+          "en": "Depends on the content"
+        },
+        {
+          "zh": "有时可变",
+          "en": "Sometimes mutable"
+        }
+      ],
+      "correct": 1,
+      "explanation": {
+        "zh": "Python元组是不可变的(immutable)，一旦创建就不能修改。",
+        "en": "Python tuples are immutable, once created they cannot be modified."
+      },
+      "topic": "tuples",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_02_Python_Primer.md - Page 6",
+        "section": "Are python tuples mutable or not?"
+      }
+    },
+    {
+      "id": "py-005",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "range(3, 8)函数返回什么序列？",
+        "en": "What sequence does range(3, 8) return?"
+      },
+      "options": [
+        {
+          "zh": "[3, 4, 5, 6, 7, 8]",
+          "en": "[3, 4, 5, 6, 7, 8]"
+        },
+        {
+          "zh": "[3, 4, 5, 6, 7]",
+          "en": "[3, 4, 5, 6, 7]"
+        },
+        {
+          "zh": "[3, 4, 5, 6]",
+          "en": "[3, 4, 5, 6]"
+        },
+        {
+          "zh": "[4, 5, 6, 7]",
+          "en": "[4, 5, 6, 7]"
+        }
+      ],
+      "correct": 1,
+      "explanation": {
+        "zh": "range(3, 8)返回从3到7的序列（不包括8），因为range函数是左闭右开的。",
+        "en": "range(3, 8) returns a sequence from 3 to 7 (excluding 8), because range function is left-closed and right-open."
+      },
+      "topic": "range-function",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_02_Python_Primer.md - Page 6",
+        "section": "What range function call would return a sequence from 3 to 8"
+      }
+    },
+    {
+      "id": "py-006",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何创建一个单元素元组？",
+        "en": "How to create a single-element tuple?"
+      },
+      "options": [
+        {
+          "zh": "('red')",
+          "en": "('red')"
+        },
+        {
+          "zh": "('red',)",
+          "en": "('red',)"
+        },
+        {
+          "zh": "tuple('red')",
+          "en": "tuple('red')"
+        },
+        {
+          "zh": "['red']",
+          "en": "['red']"
+        }
+      ],
+      "correct": 1,
+      "explanation": {
+        "zh": "单元素元组需要在元素后加逗号，如('red',)。('red')只是一个带括号的字符串。",
+        "en": "A single-element tuple needs a comma after the element, like ('red',). ('red') is just a string with parentheses."
+      },
+      "topic": "tuples",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_02_Python_Primer.md - Page 5",
+        "section": "one-element tuple"
+      }
+    },
+    {
+      "id": "py-007",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "enumerate函数的作用是什么？",
+        "en": "What is the purpose of the enumerate function?"
+      },
+      "options": [
+        {
+          "zh": "计算序列长度",
+          "en": "Calculate sequence length"
+        },
+        {
+          "zh": "返回索引和值的配对",
+          "en": "Return pairs of index and value"
+        },
+        {
+          "zh": "排序序列",
+          "en": "Sort sequence"
+        },
+        {
+          "zh": "过滤序列",
+          "en": "Filter sequence"
+        }
+      ],
+      "correct": 1,
+      "explanation": {
+        "zh": "enumerate函数返回索引和值的配对，常用于需要同时访问索引和值的循环中。",
+        "en": "The enumerate function returns pairs of index and value, commonly used in loops where you need both index and value."
+      },
+      "topic": "built-in-functions",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_02_Python_Primer.md - Page 5",
+        "section": "enumerate function"
+      }
+    },
+    {
+      "id": "py-008",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "字典和集合的主要区别是什么？",
+        "en": "What is the main difference between a Dictionary and a Set?"
+      },
+      "options": [
+        {
+          "zh": "字典存储键值对，集合只存储值",
+          "en": "Dictionary stores key-value pairs, Set only stores values"
+        },
+        {
+          "zh": "字典有序，集合无序",
+          "en": "Dictionary is ordered, Set is unordered"
+        },
+        {
+          "zh": "字典可变，集合不可变",
+          "en": "Dictionary is mutable, Set is immutable"
+        },
+        {
+          "zh": "没有区别",
+          "en": "No difference"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "字典存储键值对，而集合只存储唯一的值，没有键。",
+        "en": "Dictionary stores key-value pairs, while Set only stores unique values without keys."
+      },
+      "topic": "dictionaries-sets",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_02_Python_Primer.md - Page 11",
+        "section": "What's the difference between a Dictionary and a Set?"
+      }
+    },
+    {
+      "id": "py-009",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何检查字典中是否存在某个键？",
+        "en": "How can we check whether a key is present in a dictionary?"
+      },
+      "options": [
+        {
+          "zh": "dict.has_key('key')",
+          "en": "dict.has_key('key')"
+        },
+        {
+          "zh": "'key' in dict",
+          "en": "'key' in dict"
+        },
+        {
+          "zh": "dict.exists('key')",
+          "en": "dict.exists('key')"
+        },
+        {
+          "zh": "dict.contains('key')",
+          "en": "dict.contains('key')"
+        }
+      ],
+      "correct": 1,
+      "explanation": {
+        "zh": "使用 'key' in dict 可以检查字典中是否存在某个键。",
+        "en": "Use 'key' in dict to check whether a key exists in a dictionary."
+      },
+      "topic": "dictionaries",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_02_Python_Primer.md - Page 11",
+        "section": "How can we check whether a key is present in a dictionary?"
+      }
+    },
+    {
+      "id": "py-010",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何向集合添加单个值？",
+        "en": "How can we add a single value to a set?"
+      },
+      "options": [
+        {
+          "zh": "set.append(value)",
+          "en": "set.append(value)"
+        },
+        {
+          "zh": "set.add(value)",
+          "en": "set.add(value)"
+        },
+        {
+          "zh": "set.insert(value)",
+          "en": "set.insert(value)"
+        },
+        {
+          "zh": "set.push(value)",
+          "en": "set.push(value)"
+        }
+      ],
+      "correct": 1,
+      "explanation": {
+        "zh": "使用set.add(value)方法可以向集合添加单个值。",
+        "en": "Use the set.add(value) method to add a single value to a set."
+      },
+      "topic": "sets",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_02_Python_Primer.md - Page 11",
+        "section": "How can we add a single value to a set?"
+      }
+    },
+    {
+      "id": "py-011",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "列表推导式的主要优势是什么？",
+        "en": "What is the main advantage of list comprehensions?"
+      },
+      "options": [
+        {
+          "zh": "更快的执行速度",
+          "en": "Faster execution speed"
+        },
+        {
+          "zh": "更简洁的语法",
+          "en": "More concise syntax"
+        },
+        {
+          "zh": "更少的内存使用",
+          "en": "Less memory usage"
+        },
+        {
+          "zh": "更好的可读性",
+          "en": "Better readability"
+        }
+      ],
+      "correct": 1,
+      "explanation": {
+        "zh": "列表推导式提供更简洁的语法来创建列表，通常比传统的for循环更简洁。",
+        "en": "List comprehensions provide more concise syntax for creating lists, often more concise than traditional for loops."
+      },
+      "topic": "list-comprehensions",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_02_Python_Primer.md - Page 8",
+        "section": "5.12 list comprehension"
+      }
+    },
+    {
+      "id": "py-012",
+      "type": "multiple-choice",
+      "difficulty": "hard",
+      "question": {
+        "zh": "以下代码的输出是什么？\n\n```python\nmy_list = [1, 2, 3, 4, 5]\nresult = [x**2 for x in my_list if x % 2 == 0]\nprint(result)\n```",
+        "en": "What is the output of the following code?\n\n```python\nmy_list = [1, 2, 3, 4, 5]\nresult = [x**2 for x in my_list if x % 2 == 0]\nprint(result)\n```"
+      },
+      "options": [
+        {
+          "zh": "[1, 9, 25]",
+          "en": "[1, 9, 25]"
+        },
+        {
+          "zh": "[4, 16]",
+          "en": "[4, 16]"
+        },
+        {
+          "zh": "[2, 4]",
+          "en": "[2, 4]"
+        },
+        {
+          "zh": "[1, 4, 9, 16, 25]",
+          "en": "[1, 4, 9, 16, 25]"
+        }
+      ],
+      "correct": 1,
+      "explanation": {
+        "zh": "列表推导式筛选出偶数(2,4)，然后计算它们的平方(4,16)。",
+        "en": "The list comprehension filters even numbers (2,4), then calculates their squares (4,16)."
+      },
+      "topic": "list-comprehensions",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_02_Python_Primer.md - Page 8",
+        "section": "filtering with if"
+      }
+    },
+    {
+      "id": "py-013",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "lambda表达式的主要用途是什么？",
+        "en": "What is the main purpose of lambda expressions?"
+      },
+      "options": [
+        {
+          "zh": "创建匿名函数",
+          "en": "Create anonymous functions"
+        },
+        {
+          "zh": "创建类",
+          "en": "Create classes"
+        },
+        {
+          "zh": "创建模块",
+          "en": "Create modules"
+        },
+        {
+          "zh": "创建变量",
+          "en": "Create variables"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "lambda表达式用于创建匿名函数，通常用于需要简单函数的地方。",
+        "en": "Lambda expressions are used to create anonymous functions, commonly used where simple functions are needed."
+      },
+      "topic": "lambda-expressions",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_02_Python_Primer.md - Page 8",
+        "section": "5.14 lambda expressions"
+      }
+    },
+    {
+      "id": "py-014",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "zip函数的作用是什么？",
+        "en": "What is the purpose of the zip function?"
+      },
+      "options": [
+        {
+          "zh": "压缩文件",
+          "en": "Compress files"
+        },
+        {
+          "zh": "将多个序列配对组合",
+          "en": "Pair and combine multiple sequences"
+        },
+        {
+          "zh": "解压缩文件",
+          "en": "Decompress files"
+        },
+        {
+          "zh": "排序序列",
+          "en": "Sort sequences"
+        }
+      ],
+      "correct": 1,
+      "explanation": {
+        "zh": "zip函数将多个序列配对组合，返回一个迭代器，包含来自每个序列的元素配对。",
+        "en": "The zip function pairs and combines multiple sequences, returning an iterator with element pairs from each sequence."
+      },
+      "topic": "built-in-functions",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_02_Python_Primer.md - Page 8",
+        "section": "5.15 zip"
+      }
+    },
+    {
+      "id": "py-015",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "如何检查一个值是否在列表中？",
+        "en": "How to check if a value is in a list?"
+      },
+      "options": [
+        {
+          "zh": "list.contains(value)",
+          "en": "list.contains(value)"
+        },
+        {
+          "zh": "value in list",
+          "en": "value in list"
+        },
+        {
+          "zh": "list.has(value)",
+          "en": "list.has(value)"
+        },
+        {
+          "zh": "list.find(value)",
+          "en": "list.find(value)"
+        }
+      ],
+      "correct": 1,
+      "explanation": {
+        "zh": "使用 'value in list' 可以检查一个值是否在列表中。",
+        "en": "Use 'value in list' to check if a value is in a list."
+      },
+      "topic": "lists",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_02_Python_Primer.md - Page 7",
+        "section": "operators in and not in"
+      }
+    }
+  ]
+}

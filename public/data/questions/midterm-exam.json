@@ -1,0 +1,2828 @@
+{
+  "metadata": {
+    "title": "CST8504 Midterm Exam Questions",
+    "description": "Comprehensive midterm exam questions covering Python, NumPy, Pandas, and Matplotlib with enhanced coverage of Python fundamentals",
+    "version": "3.0",
+    "totalQuestions": 200,
+    "chapters": [
+      "midterm-info",
+      "machine-learning",
+      "python-ecosystem",
+      "python-primer",
+      "numpy",
+      "pandas",
+      "matplotlib"
+    ],
+    "difficulties": ["easy", "medium", "hard"],
+    "types": ["multiple-choice", "coding", "essay", "fill-in-blank"]
+  },
+  "questions": [
+    {
+      "id": "mi-001",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "CST8504期中考试的时间安排是什么？",
+        "en": "What is the time schedule for CST8504 midterm exam?"
+      },
+      "options": [
+        {
+          "zh": "1小时考试，1.5小时时间限制",
+          "en": "1 hour test, 1.5-hour time limit"
+        },
+        {
+          "zh": "1.5小时考试，2小时时间限制",
+          "en": "1.5-hour test, 2-hour time limit"
+        },
+        {
+          "zh": "2小时考试，2.5小时时间限制",
+          "en": "2-hour test, 2.5-hour time limit"
+        },
+        {
+          "zh": "1小时考试，1小时时间限制",
+          "en": "1-hour test, 1-hour time limit"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "期中考试是1小时测试，但有1.5小时的时间限制。",
+        "en": "The midterm exam is a 1-hour test with a 1.5-hour time limit."
+      },
+      "topic": "exam-info",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_04_Midterm_Review.md - Page 2",
+        "section": "1 hour test, 1.5-hour time limit"
+      },
+      "sourceChapter": "midterm-info"
+    },
+    {
+      "id": "mi-002",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "期中考试的考试形式是什么？",
+        "en": "What is the format of the midterm exam?"
+      },
+      "options": [
+        {
+          "zh": "闭卷考试，无网络，选择题+书面答案",
+          "en": "Closed book, no internet, multiple choice + written answers"
+        },
+        {
+          "zh": "开卷考试，有网络，只有选择题",
+          "en": "Open book, with internet, only multiple choice"
+        },
+        {
+          "zh": "闭卷考试，有网络，只有书面答案",
+          "en": "Closed book, with internet, only written answers"
+        },
+        {
+          "zh": "开卷考试，无网络，选择题+书面答案",
+          "en": "Open book, no internet, multiple choice + written answers"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "期中考试是闭卷考试，无网络，包含选择题（Scantron）和书面答案两部分。",
+        "en": "The midterm exam is closed book with no internet, including both multiple choice (Scantron) and written answer parts."
+      },
+      "topic": "exam-info",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_04_Midterm_Review.md - Page 2",
+        "section": "Closed book, no Internet, Part multiple choice Scantron Quiz, Part written answers"
+      },
+      "sourceChapter": "midterm-info"
+    },
+    {
+      "id": "ml-001",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "机器学习的类型包括哪些？",
+        "en": "What types of machine learning are included?"
+      },
+      "options": [
+        {
+          "zh": "监督学习、无监督学习、强化学习",
+          "en": "Supervised, Unsupervised, Reinforcement Learning"
+        },
+        {
+          "zh": "监督学习、无监督学习",
+          "en": "Supervised, Unsupervised"
+        },
+        {
+          "zh": "分类、回归、聚类",
+          "en": "Classification, Regression, Clustering"
+        },
+        {
+          "zh": "深度学习、机器学习、统计学习",
+          "en": "Deep Learning, Machine Learning, Statistical Learning"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "机器学习的主要类型包括监督学习、无监督学习和强化学习。",
+        "en": "The main types of machine learning include supervised, unsupervised, and reinforcement learning."
+      },
+      "topic": "machine-learning",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_04_Midterm_Review.md - Page 4",
+        "section": "Types of Machine Learning: Supervised, Unsupervised, Reinforcement Learning"
+      },
+      "sourceChapter": "machine-learning"
+    },
+    {
+      "id": "ml-002",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "监督学习包括哪些子类型？",
+        "en": "What subtypes does supervised learning include?"
+      },
+      "options": [
+        {
+          "zh": "回归和分类",
+          "en": "Regression and Classification"
+        },
+        {
+          "zh": "聚类和降维",
+          "en": "Clustering and Dimensionality Reduction"
+        },
+        {
+          "zh": "强化学习和深度学习",
+          "en": "Reinforcement Learning and Deep Learning"
+        },
+        {
+          "zh": "监督学习和无监督学习",
+          "en": "Supervised Learning and Unsupervised Learning"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "监督学习包括回归（预测连续值）和分类（预测类别）两个子类型。",
+        "en": "Supervised learning includes regression (predicting continuous values) and classification (predicting categories)."
+      },
+      "topic": "machine-learning",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_04_Midterm_Review.md - Page 4",
+        "section": "Supervised: Regression, Classification"
+      },
+      "sourceChapter": "machine-learning"
+    },
+    {
+      "id": "pe-001",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "Python生态系统包括哪些组件？",
+        "en": "What components does the Python ecosystem include?"
+      },
+      "options": [
+        {
+          "zh": "Python模块、包、pip、虚拟环境、Anaconda、conda、IPython、Jupyter Notebooks",
+          "en": "Python modules, packages, pip, virtual environments, Anaconda, conda, IPython, Jupyter Notebooks"
+        },
+        {
+          "zh": "只有Python解释器",
+          "en": "Only Python interpreter"
+        },
+        {
+          "zh": "Python和NumPy",
+          "en": "Python and NumPy"
+        },
+        {
+          "zh": "Python、NumPy、Pandas",
+          "en": "Python, NumPy, Pandas"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "Python生态系统包括模块、包、pip、虚拟环境、Anaconda发行版、conda、IPython和Jupyter Notebooks等组件。",
+        "en": "The Python ecosystem includes modules, packages, pip, virtual environments, Anaconda Distribution, conda, IPython, and Jupyter Notebooks."
+      },
+      "topic": "python-ecosystem",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_04_Midterm_Review.md - Page 5",
+        "section": "Python modules, packages, pip, Virtual environments, Anaconda Distribution, conda, IPython, Jupyter Notebooks"
+      },
+      "sourceChapter": "python-ecosystem"
+    },
+    {
+      "id": "pp-001",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "Python Primer中需要重点掌握的概念包括哪些？",
+        "en": "What key concepts from Python Primer need to be mastered?"
+      },
+      "options": [
+        {
+          "zh": "推导式、解包、切片",
+          "en": "Comprehensions, Unpacking, Slicing"
+        },
+        {
+          "zh": "类和对象",
+          "en": "Classes and Objects"
+        },
+        {
+          "zh": "文件操作",
+          "en": "File Operations"
+        },
+        {
+          "zh": "网络编程",
+          "en": "Network Programming"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "Python Primer中需要重点掌握推导式、解包和切片等核心概念。",
+        "en": "Key concepts from Python Primer that need to be mastered include comprehensions, unpacking, and slicing."
+      },
+      "topic": "python-primer",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_04_Midterm_Review.md - Page 6",
+        "section": "Notable mentions: Comprehensions, Unpacking, Slicing"
+      },
+      "sourceChapter": "python-primer"
+    },
+    {
+      "id": "pp-002",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "三引号字符串的作用是什么？",
+        "en": "What do triple-quoted strings do?"
+      },
+      "options": [
+        {
+          "zh": "创建多行字符串和文档字符串",
+          "en": "Create multi-line strings and docstrings"
+        },
+        {
+          "zh": "创建单行字符串",
+          "en": "Create single-line strings"
+        },
+        {
+          "zh": "创建注释",
+          "en": "Create comments"
+        },
+        {
+          "zh": "创建变量名",
+          "en": "Create variable names"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "三引号字符串用于创建多行字符串和文档字符串（docstrings）。",
+        "en": "Triple-quoted strings are used to create multi-line strings and docstrings."
+      },
+      "topic": "python-basics",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_02_Python_Primer.md - Page 6",
+        "section": "What do triple-quoted strings do?"
+      },
+      "sourceChapter": "python-primer"
+    },
+    {
+      "id": "pp-003",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "如何将字符串'78'转换为整数？",
+        "en": "How can we turn a string '78' into an integer?"
+      },
+      "options": [
+        {
+          "zh": "int('78')",
+          "en": "int('78')"
+        },
+        {
+          "zh": "str(78)",
+          "en": "str(78)"
+        },
+        {
+          "zh": "float('78')",
+          "en": "float('78')"
+        },
+        {
+          "zh": "eval('78')",
+          "en": "eval('78')"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用int('78')函数可以将字符串转换为整数。",
+        "en": "Use the int('78') function to convert a string to an integer."
+      },
+      "topic": "python-basics",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_02_Python_Primer.md - Page 6",
+        "section": "How can we turn a string '78' into an integer?"
+      },
+      "sourceChapter": "python-primer"
+    },
+    {
+      "id": "pp-004",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "range函数调用range(3, 8)会返回什么序列？",
+        "en": "What sequence would range function call range(3, 8) return?"
+      },
+      "options": [
+        {
+          "zh": "[3, 4, 5, 6, 7]",
+          "en": "[3, 4, 5, 6, 7]"
+        },
+        {
+          "zh": "[3, 4, 5, 6, 7, 8]",
+          "en": "[3, 4, 5, 6, 7, 8]"
+        },
+        {
+          "zh": "[0, 1, 2, 3, 4, 5, 6, 7]",
+          "en": "[0, 1, 2, 3, 4, 5, 6, 7]"
+        },
+        {
+          "zh": "[1, 2, 3, 4, 5, 6, 7]",
+          "en": "[1, 2, 3, 4, 5, 6, 7]"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "range(3, 8)返回从3到7的序列（不包括8）。",
+        "en": "range(3, 8) returns a sequence from 3 to 7 (excluding 8)."
+      },
+      "topic": "python-basics",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_02_Python_Primer.md - Page 6",
+        "section": "What range function call would return a sequence from 3 to 8"
+      },
+      "sourceChapter": "python-primer"
+    },
+    {
+      "id": "pp-005",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "Python中参数是如何传递的？",
+        "en": "How are arguments passed in Python?"
+      },
+      "options": [
+        {
+          "zh": "按引用传递",
+          "en": "By reference"
+        },
+        {
+          "zh": "按值传递",
+          "en": "By value"
+        },
+        {
+          "zh": "按名称传递",
+          "en": "By name"
+        },
+        {
+          "zh": "按位置传递",
+          "en": "By position"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "Python中参数是按引用传递的，这意味着函数可以修改可变对象。",
+        "en": "Arguments in Python are passed by reference, meaning functions can modify mutable objects."
+      },
+      "topic": "python-basics",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_02_Python_Primer.md - Page 6",
+        "section": "How are arguments passed in Python? (by-value or by-reference)?"
+      },
+      "sourceChapter": "python-primer"
+    },
+    {
+      "id": "pp-006",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "Python元组是可变的吗？",
+        "en": "Are Python tuples mutable or not?"
+      },
+      "options": [
+        {
+          "zh": "不可变",
+          "en": "Immutable"
+        },
+        {
+          "zh": "可变",
+          "en": "Mutable"
+        },
+        {
+          "zh": "部分可变",
+          "en": "Partially mutable"
+        },
+        {
+          "zh": "取决于内容",
+          "en": "Depends on content"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "Python元组是不可变的，一旦创建就不能修改。",
+        "en": "Python tuples are immutable, meaning they cannot be modified once created."
+      },
+      "topic": "python-basics",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_02_Python_Primer.md - Page 6",
+        "section": "Are python tuples mutable or not?"
+      },
+      "sourceChapter": "python-primer"
+    },
+    {
+      "id": "pp-007",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "字典和集合的主要区别是什么？",
+        "en": "What's the difference between a Dictionary and a Set?"
+      },
+      "options": [
+        {
+          "zh": "字典存储键值对，集合存储唯一值",
+          "en": "Dictionary stores key-value pairs, Set stores unique values"
+        },
+        {
+          "zh": "字典有序，集合无序",
+          "en": "Dictionary is ordered, Set is unordered"
+        },
+        {
+          "zh": "字典可变，集合不可变",
+          "en": "Dictionary is mutable, Set is immutable"
+        },
+        {
+          "zh": "字典有索引，集合没有索引",
+          "en": "Dictionary has indexing, Set has no indexing"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "字典存储键值对，而集合只存储唯一的元素。",
+        "en": "Dictionary stores key-value pairs, while Set stores only unique elements."
+      },
+      "topic": "python-data-structures",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_02_Python_Primer.md - Page 11",
+        "section": "What's the difference between a Dictionary and a Set?"
+      },
+      "sourceChapter": "python-primer"
+    },
+    {
+      "id": "pp-008",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "如何检查字典中是否存在某个键？",
+        "en": "How can we check whether a key is present in a dictionary?"
+      },
+      "options": [
+        {
+          "zh": "'key' in dict",
+          "en": "'key' in dict"
+        },
+        {
+          "zh": "dict.has_key('key')",
+          "en": "dict.has_key('key')"
+        },
+        {
+          "zh": "dict.contains('key')",
+          "en": "dict.contains('key')"
+        },
+        {
+          "zh": "dict.exists('key')",
+          "en": "dict.exists('key')"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用'key' in dict可以检查字典中是否存在某个键。",
+        "en": "Use 'key' in dict to check whether a key is present in a dictionary."
+      },
+      "topic": "python-data-structures",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_02_Python_Primer.md - Page 11",
+        "section": "How can we check whether a key is present in a dictionary?"
+      },
+      "sourceChapter": "python-primer"
+    },
+    {
+      "id": "pp-009",
+      "type": "coding",
+      "difficulty": "hard",
+      "isKeyQuestion": true,
+      "keyQuestionReason": "期中考试重点题目 - 列表推导式",
+      "question": {
+        "zh": "用列表推导式生成0到99的平方数列表",
+        "en": "Use list comprehension to generate squares of integers from 0 to 99"
+      },
+      "hint": {
+        "zh": "输入：无\n输出：[0, 1, 4, 9, 16, 25, ...]",
+        "en": "Input: None\nOutput: [0, 1, 4, 9, 16, 25, ...]"
+      },
+      "code_template": {
+        "zh": "# 请完成列表推导式\nresult = \nprint(result)",
+        "en": "# Complete the list comprehension\nresult = \nprint(result)"
+      },
+      "expected_output": "[0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225, 256, 289, 324, 361, 400, 441, 484, 529, 576, 625, 676, 729, 784, 841, 900, 961, 1024, 1089, 1156, 1225, 1296, 1369, 1444, 1521, 1600, 1681, 1764, 1849, 1936, 2025, 2116, 2209, 2304, 2401, 2500, 2601, 2704, 2809, 2916, 3025, 3136, 3249, 3364, 3481, 3600, 3721, 3844, 3969, 4096, 4225, 4356, 4489, 4624, 4761, 4900, 5041, 5184, 5329, 5476, 5625, 5776, 5929, 6084, 6241, 6400, 6561, 6724, 6889, 7056, 7225, 7396, 7569, 7744, 7921, 8100, 8281, 8464, 8649, 8836, 9025, 9216, 9409, 9604, 9801]",
+      "solution": {
+        "zh": "result = [x**2 for x in range(100)]",
+        "en": "result = [x**2 for x in range(100)]"
+      },
+      "explanation": {
+        "zh": "使用列表推导式[x**2 for x in range(100)]可以生成0到99的整数平方列表。",
+        "en": "Use list comprehension [x**2 for x in range(100)] to generate a list of squares of integers from 0 to 99."
+      },
+      "topic": "list-comprehensions",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_04_Midterm_Review.md - Page 10",
+        "section": "Write a Python list comprehension that evaluates to a list containing the squares of the integers from 0 to 99"
+      },
+      "sourceChapter": "python-primer"
+    },
+    {
+      "id": "pp-010",
+      "type": "coding",
+      "difficulty": "hard",
+      "isKeyQuestion": true,
+      "keyQuestionReason": "期中考试重点题目 - 集合推导式",
+      "question": {
+        "zh": "用集合推导式生成0到99的整数集合，排除80到89",
+        "en": "Use set comprehension to generate integers 0-99, excluding 80-89"
+      },
+      "hint": {
+        "zh": "输入：无\n输出：{0, 1, 2, ..., 79, 90, 91, ..., 99}",
+        "en": "Input: None\nOutput: {0, 1, 2, ..., 79, 90, 91, ..., 99}"
+      },
+      "code_template": {
+        "zh": "# 请完成集合推导式\nresult = \nprint(result)",
+        "en": "# Complete the set comprehension\nresult = \nprint(result)"
+      },
+      "expected_output": "{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99}",
+      "solution": {
+        "zh": "result = {x for x in range(100) if not (80 <= x <= 89)}",
+        "en": "result = {x for x in range(100) if not (80 <= x <= 89)}"
+      },
+      "explanation": {
+        "zh": "使用集合推导式{x for x in range(100) if not (80 <= x <= 89)}可以生成排除80到89的整数集合。",
+        "en": "Use set comprehension {x for x in range(100) if not (80 <= x <= 89)} to generate a set of integers excluding 80 to 89."
+      },
+      "topic": "set-comprehensions",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_04_Midterm_Review.md - Page 10",
+        "section": "Write a Python set comprehension that evaluates to a set containing the integers from 0 to 99, except for 80 to 89"
+      },
+      "sourceChapter": "python-primer"
+    },
+    {
+      "id": "np-001",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "NumPy数组和Python列表的根本区别是什么？",
+        "en": "What's the fundamental difference between a NumPy array and a Python list?"
+      },
+      "options": [
+        {
+          "zh": "NumPy数组存储同质数据，Python列表可以存储异质数据",
+          "en": "NumPy arrays store homogeneous data, Python lists can store heterogeneous data"
+        },
+        {
+          "zh": "NumPy数组更快，Python列表更慢",
+          "en": "NumPy arrays are faster, Python lists are slower"
+        },
+        {
+          "zh": "NumPy数组有更多方法，Python列表方法较少",
+          "en": "NumPy arrays have more methods, Python lists have fewer methods"
+        },
+        {
+          "zh": "NumPy数组占用更多内存，Python列表占用更少内存",
+          "en": "NumPy arrays use more memory, Python lists use less memory"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "NumPy数组存储同质数据（相同类型），而Python列表可以存储不同类型的元素。",
+        "en": "NumPy arrays store homogeneous data (same type), while Python lists can store elements of different types."
+      },
+      "topic": "numpy-basics",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 7",
+        "section": "What's the fundamental difference between a NumPy array and a python list?"
+      },
+      "sourceChapter": "numpy"
+    },
+    {
+      "id": "np-002",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "如何从列表创建数组？",
+        "en": "How can we create an array from a list?"
+      },
+      "options": [
+        {
+          "zh": "np.array(list)",
+          "en": "np.array(list)"
+        },
+        {
+          "zh": "np.create(list)",
+          "en": "np.create(list)"
+        },
+        {
+          "zh": "np.from_list(list)",
+          "en": "np.from_list(list)"
+        },
+        {
+          "zh": "np.make_array(list)",
+          "en": "np.make_array(list)"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用np.array(list)函数可以从列表创建NumPy数组。",
+        "en": "Use the np.array(list) function to create a NumPy array from a list."
+      },
+      "topic": "numpy-basics",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 7",
+        "section": "How can we create an array from a list?"
+      },
+      "sourceChapter": "numpy"
+    },
+    {
+      "id": "np-003",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "如何找到数组元素的数据类型？",
+        "en": "How can we find the datatype of the elements of an array?"
+      },
+      "options": [
+        {
+          "zh": "array.dtype",
+          "en": "array.dtype"
+        },
+        {
+          "zh": "array.type",
+          "en": "array.type"
+        },
+        {
+          "zh": "array.datatype",
+          "en": "array.datatype"
+        },
+        {
+          "zh": "array.element_type",
+          "en": "array.element_type"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用array.dtype属性可以获取数组元素的数据类型。",
+        "en": "Use the array.dtype attribute to get the datatype of array elements."
+      },
+      "topic": "numpy-basics",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 7",
+        "section": "How can we find the datatype of the elements of an array?"
+      },
+      "sourceChapter": "numpy"
+    },
+    {
+      "id": "np-004",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何将数组转换为不同的形状？",
+        "en": "How can we transform an array into a different shape?"
+      },
+      "options": [
+        {
+          "zh": "array.reshape(new_shape)",
+          "en": "array.reshape(new_shape)"
+        },
+        {
+          "zh": "array.resize(new_shape)",
+          "en": "array.resize(new_shape)"
+        },
+        {
+          "zh": "array.change_shape(new_shape)",
+          "en": "array.change_shape(new_shape)"
+        },
+        {
+          "zh": "array.modify_shape(new_shape)",
+          "en": "array.modify_shape(new_shape)"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用array.reshape(new_shape)方法可以改变数组的形状。",
+        "en": "Use the array.reshape(new_shape) method to change the shape of an array."
+      },
+      "topic": "numpy-basics",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 7",
+        "section": "How can we transform an array into a different shape?"
+      },
+      "sourceChapter": "numpy"
+    },
+    {
+      "id": "np-005",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何创建等间距的浮点值数组？",
+        "en": "How can we create an array with evenly spaced floating point values?"
+      },
+      "options": [
+        {
+          "zh": "np.linspace(start, stop, num)",
+          "en": "np.linspace(start, stop, num)"
+        },
+        {
+          "zh": "np.arange(start, stop, step)",
+          "en": "np.arange(start, stop, step)"
+        },
+        {
+          "zh": "np.range(start, stop, num)",
+          "en": "np.range(start, stop, num)"
+        },
+        {
+          "zh": "np.space(start, stop, num)",
+          "en": "np.space(start, stop, num)"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用np.linspace(start, stop, num)可以创建指定数量的等间距浮点值数组。",
+        "en": "Use np.linspace(start, stop, num) to create an array with a specified number of evenly spaced floating point values."
+      },
+      "topic": "numpy-basics",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 7",
+        "section": "How can we create an array with evenly spaced floating point values?"
+      },
+      "sourceChapter": "numpy"
+    },
+    {
+      "id": "np-006",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "NumPy数组中的广播（Broadcasting）是什么意思？",
+        "en": "What does Broadcasting mean with NumPy arrays?"
+      },
+      "options": [
+        {
+          "zh": "将标量值扩展到与数组相同的形状进行运算",
+          "en": "Extending scalar values to the same shape as arrays for operations"
+        },
+        {
+          "zh": "将数组从一个设备传输到另一个设备",
+          "en": "Transferring arrays from one device to another"
+        },
+        {
+          "zh": "将数组从一个内存位置复制到另一个位置",
+          "en": "Copying arrays from one memory location to another"
+        },
+        {
+          "zh": "将数组从一个格式转换为另一个格式",
+          "en": "Converting arrays from one format to another"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "广播是NumPy的一种机制，允许不同形状的数组进行运算，标量值会被扩展到与数组相同的形状。",
+        "en": "Broadcasting is a NumPy mechanism that allows operations on arrays of different shapes, where scalar values are extended to match the array shape."
+      },
+      "topic": "numpy-operations",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 13",
+        "section": "What does Broadcasting mean with numpy arrays?"
+      },
+      "sourceChapter": "numpy"
+    },
+    {
+      "id": "np-007",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "如何找到数组中所有值的平均值？",
+        "en": "How can we find the average of all the values in an array?"
+      },
+      "options": [
+        {
+          "zh": "array.mean()",
+          "en": "array.mean()"
+        },
+        {
+          "zh": "array.average()",
+          "en": "array.average()"
+        },
+        {
+          "zh": "array.avg()",
+          "en": "array.avg()"
+        },
+        {
+          "zh": "array.centre()",
+          "en": "array.centre()"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用array.mean()方法可以计算数组中所有值的平均值。",
+        "en": "Use the array.mean() method to calculate the average of all values in an array."
+      },
+      "topic": "numpy-operations",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 13",
+        "section": "How can we find the average of all the values in an array?"
+      },
+      "sourceChapter": "numpy"
+    },
+    {
+      "id": "np-008",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何找到数组所有行的平均值？",
+        "en": "How can we find the average value of all the rows of an array?"
+      },
+      "options": [
+        {
+          "zh": "array.mean(axis=1)",
+          "en": "array.mean(axis=1)"
+        },
+        {
+          "zh": "array.mean(axis=0)",
+          "en": "array.mean(axis=0)"
+        },
+        {
+          "zh": "array.row_mean()",
+          "en": "array.row_mean()"
+        },
+        {
+          "zh": "array.mean_rows()",
+          "en": "array.mean_rows()"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用array.mean(axis=1)可以计算每行的平均值。",
+        "en": "Use array.mean(axis=1) to calculate the mean of each row."
+      },
+      "topic": "numpy-operations",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 13",
+        "section": "How can we find the average value of all the rows of an array?"
+      },
+      "sourceChapter": "numpy"
+    },
+    {
+      "id": "np-009",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何找到数组所有列的平均值？",
+        "en": "How can we find the average value of all the columns of an array?"
+      },
+      "options": [
+        {
+          "zh": "array.mean(axis=0)",
+          "en": "array.mean(axis=0)"
+        },
+        {
+          "zh": "array.mean(axis=1)",
+          "en": "array.mean(axis=1)"
+        },
+        {
+          "zh": "array.col_mean()",
+          "en": "array.col_mean()"
+        },
+        {
+          "zh": "array.mean_cols()",
+          "en": "array.mean_cols()"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用array.mean(axis=0)可以计算每列的平均值。",
+        "en": "Use array.mean(axis=0) to calculate the mean of each column."
+      },
+      "topic": "numpy-operations",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 13",
+        "section": "How can we find the average value of all the columns of an array?"
+      },
+      "sourceChapter": "numpy"
+    },
+    {
+      "id": "np-010",
+      "type": "coding",
+      "difficulty": "hard",
+      "isKeyQuestion": true,
+      "keyQuestionReason": "期中考试重点题目 - NumPy数组切片",
+      "question": {
+        "zh": "从NumPy数组myArray中提取前3行前3列的数据",
+        "en": "Extract the first 3 rows and first 3 columns from NumPy array myArray"
+      },
+      "hint": {
+        "zh": "输入：myArray (4x4数组)\n输出：3x3子数组",
+        "en": "Input: myArray (4x4 array)\nOutput: 3x3 subarray"
+      },
+      "code_template": {
+        "zh": "# 请完成数组切片\nresult = \nprint(result)",
+        "en": "# Complete the array slicing\nresult = \nprint(result)"
+      },
+      "expected_output": "[[1 2 3]\n [4 5 6]\n [7 8 9]]",
+      "solution": {
+        "zh": "result = myArray[0:3, 0:3]",
+        "en": "result = myArray[0:3, 0:3]"
+      },
+      "explanation": {
+        "zh": "使用myArray[0:3, 0:3]可以选择前3行前3列的数据。",
+        "en": "Use myArray[0:3, 0:3] to select the first three rows and first three columns."
+      },
+      "topic": "numpy-indexing",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_04_Midterm_Review.md - Page 11",
+        "section": "The first three columns of the first three rows"
+      },
+      "sourceChapter": "numpy"
+    },
+    {
+      "id": "np-011",
+      "type": "coding",
+      "difficulty": "medium",
+      "question": {
+        "zh": "从NumPy数组myArray中提取前3列的数据",
+        "en": "Extract the first 3 columns from NumPy array myArray"
+      },
+      "hint": {
+        "zh": "输入：myArray (4x4数组)\n输出：4x3子数组",
+        "en": "Input: myArray (4x4 array)\nOutput: 4x3 subarray"
+      },
+      "code_template": {
+        "zh": "# 请完成数组切片\nresult = \nprint(result)",
+        "en": "# Complete the array slicing\nresult = \nprint(result)"
+      },
+      "expected_output": "[[1 2 3]\n [4 5 6]\n [7 8 9]\n [10 11 12]]",
+      "solution": {
+        "zh": "result = myArray[:, 0:3]",
+        "en": "result = myArray[:, 0:3]"
+      },
+      "explanation": {
+        "zh": "使用myArray[:, 0:3]可以选择所有行的前3列数据。",
+        "en": "Use myArray[:, 0:3] to select the first three columns of all rows."
+      },
+      "topic": "numpy-indexing",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_04_Midterm_Review.md - Page 11",
+        "section": "The first three columns"
+      },
+      "sourceChapter": "numpy"
+    },
+    {
+      "id": "np-012",
+      "type": "coding",
+      "difficulty": "medium",
+      "question": {
+        "zh": "从NumPy数组myArray中提取第3列和第7列的数据",
+        "en": "Extract columns 3 and 7 from NumPy array myArray"
+      },
+      "hint": {
+        "zh": "输入：myArray (4x8数组)\n输出：4x2子数组",
+        "en": "Input: myArray (4x8 array)\nOutput: 4x2 subarray"
+      },
+      "code_template": {
+        "zh": "# 你的代码\nresult = \nprint(result)",
+        "en": "# Your code\nresult = \nprint(result)"
+      },
+      "expected_output": "[[3 7]\n [13 17]\n [23 27]\n [33 37]]",
+      "solution": {
+        "zh": "result = myArray[:, [2, 6]]",
+        "en": "result = myArray[:, [2, 6]]"
+      },
+      "explanation": {
+        "zh": "使用myArray[:, [2, 6]]可以选择第3列（索引2）和第7列（索引6）的数据。",
+        "en": "Use myArray[:, [2, 6]] to select column 3 (index 2) and column 7 (index 6)."
+      },
+      "topic": "numpy-indexing",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_04_Midterm_Review.md - Page 11",
+        "section": "Columns 3 and 7"
+      },
+      "sourceChapter": "numpy"
+    },
+    {
+      "id": "pd-001",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "如何创建Pandas Series？",
+        "en": "How to create a Pandas Series?"
+      },
+      "options": [
+        {
+          "zh": "pandas.Series([45, 7, 23])",
+          "en": "pandas.Series([45, 7, 23])"
+        },
+        {
+          "zh": "pandas.create_series([45, 7, 23])",
+          "en": "pandas.create_series([45, 7, 23])"
+        },
+        {
+          "zh": "pandas.make_series([45, 7, 23])",
+          "en": "pandas.make_series([45, 7, 23])"
+        },
+        {
+          "zh": "pandas.new_series([45, 7, 23])",
+          "en": "pandas.new_series([45, 7, 23])"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用pandas.Series([45, 7, 23])可以创建Pandas Series。",
+        "en": "Use pandas.Series([45, 7, 23]) to create a Pandas Series."
+      },
+      "topic": "series-creation",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 15",
+        "section": "Default indices: pandas.Series([45,7,23])"
+      },
+      "sourceChapter": "pandas"
+    },
+    {
+      "id": "pd-002",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "如何创建具有自定义索引的Series？",
+        "en": "How to create a Series with custom indices?"
+      },
+      "options": [
+        {
+          "zh": "pandas.Series(80, index=[45, 7, 23])",
+          "en": "pandas.Series(80, index=[45, 7, 23])"
+        },
+        {
+          "zh": "pandas.Series(index=[45, 7, 23], value=80)",
+          "en": "pandas.Series(index=[45, 7, 23], value=80)"
+        },
+        {
+          "zh": "pandas.Series(80, indices=[45, 7, 23])",
+          "en": "pandas.Series(80, indices=[45, 7, 23])"
+        },
+        {
+          "zh": "pandas.Series(80, keys=[45, 7, 23])",
+          "en": "pandas.Series(80, keys=[45, 7, 23])"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用pandas.Series(value, index=indices)可以创建具有自定义索引的Series。",
+        "en": "Use pandas.Series(value, index=indices) to create a Series with custom indices."
+      },
+      "topic": "series-creation",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 15",
+        "section": "index is a keyword argument: pandas.Series(80,index=[45,7,23])"
+      },
+      "sourceChapter": "pandas"
+    },
+    {
+      "id": "pd-003",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "如何访问Series的所有值？",
+        "en": "How to access all values of a Series?"
+      },
+      "options": [
+        {
+          "zh": "seriesname.values",
+          "en": "seriesname.values"
+        },
+        {
+          "zh": "seriesname.data",
+          "en": "seriesname.data"
+        },
+        {
+          "zh": "seriesname.content",
+          "en": "seriesname.content"
+        },
+        {
+          "zh": "seriesname.elements",
+          "en": "seriesname.elements"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用seriesname.values属性可以访问Series的所有值。",
+        "en": "Use the seriesname.values attribute to access all values of a Series."
+      },
+      "topic": "series-access",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 16",
+        "section": "Access all values: seriesname.values"
+      },
+      "sourceChapter": "pandas"
+    },
+    {
+      "id": "pd-004",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "如何获取Series的统计描述？",
+        "en": "How to get statistical description of a Series?"
+      },
+      "options": [
+        {
+          "zh": "seriesname.describe()",
+          "en": "seriesname.describe()"
+        },
+        {
+          "zh": "seriesname.stats()",
+          "en": "seriesname.stats()"
+        },
+        {
+          "zh": "seriesname.summary()",
+          "en": "seriesname.summary()"
+        },
+        {
+          "zh": "seriesname.info()",
+          "en": "seriesname.info()"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用seriesname.describe()方法可以获取Series的统计描述，包括四分位数等。",
+        "en": "Use the seriesname.describe() method to get statistical description of a Series, including quartiles."
+      },
+      "topic": "series-statistics",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 16",
+        "section": "quartiles and all the above produced by seriesname.describe()"
+      },
+      "sourceChapter": "pandas"
+    },
+    {
+      "id": "pd-005",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何从字典创建DataFrame？",
+        "en": "How to create a DataFrame from a dictionary?"
+      },
+      "options": [
+        {
+          "zh": "pd.DataFrame({'me':[0],'him':[10],'her':[20]})",
+          "en": "pd.DataFrame({'me':[0],'him':[10],'her':[20]})"
+        },
+        {
+          "zh": "pd.create_dataframe({'me':[0],'him':[10],'her':[20]})",
+          "en": "pd.create_dataframe({'me':[0],'him':[10],'her':[20]})"
+        },
+        {
+          "zh": "pd.from_dict({'me':[0],'him':[10],'her':[20]})",
+          "en": "pd.from_dict({'me':[0],'him':[10],'her':[20]})"
+        },
+        {
+          "zh": "pd.make_dataframe({'me':[0],'him':[10],'her':[20]})",
+          "en": "pd.make_dataframe({'me':[0],'him':[10],'her':[20]})"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用pd.DataFrame()函数可以从字典创建DataFrame，字典的键成为列名。",
+        "en": "Use the pd.DataFrame() function to create a DataFrame from a dictionary, where dictionary keys become column names."
+      },
+      "topic": "dataframe-creation",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 18",
+        "section": "pd.DataFrame({'me':[0],'him':[10],'her':[20]})"
+      },
+      "sourceChapter": "pandas"
+    },
+    {
+      "id": "pd-006",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何通过标签访问DataFrame的行？",
+        "en": "How to access DataFrame rows by label?"
+      },
+      "options": [
+        {
+          "zh": "dataframename.loc['label']",
+          "en": "dataframename.loc['label']"
+        },
+        {
+          "zh": "dataframename.get('label')",
+          "en": "dataframename.get('label')"
+        },
+        {
+          "zh": "dataframename['label']",
+          "en": "dataframename['label']"
+        },
+        {
+          "zh": "dataframename.row('label')",
+          "en": "dataframename.row('label')"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用dataframename.loc['label']可以通过标签访问DataFrame的行。",
+        "en": "Use dataframename.loc['label'] to access DataFrame rows by label."
+      },
+      "topic": "dataframe-access",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 19",
+        "section": "dataframename.loc['label'] gives the row with explicit label"
+      },
+      "sourceChapter": "pandas"
+    },
+    {
+      "id": "pd-007",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何通过位置访问DataFrame的行？",
+        "en": "How to access DataFrame rows by position?"
+      },
+      "options": [
+        {
+          "zh": "dataframename.iloc[int]",
+          "en": "dataframename.iloc[int]"
+        },
+        {
+          "zh": "dataframename.loc[int]",
+          "en": "dataframename.loc[int]"
+        },
+        {
+          "zh": "dataframename.get(int)",
+          "en": "dataframename.get(int)"
+        },
+        {
+          "zh": "dataframename.at[int]",
+          "en": "dataframename.at[int]"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用dataframename.iloc[int]可以通过位置（0基索引）访问DataFrame的行。",
+        "en": "Use dataframename.iloc[int] to access DataFrame rows by position (0-based index)."
+      },
+      "topic": "dataframe-access",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 19",
+        "section": "dataframename.iloc[int] gives the row at position int (0-based)"
+      },
+      "sourceChapter": "pandas"
+    },
+    {
+      "id": "pd-008",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何访问DataFrame的特定单元格？",
+        "en": "How to access a specific cell in a DataFrame?"
+      },
+      "options": [
+        {
+          "zh": "dataframename.at['rowlabel', 'columnlabel']",
+          "en": "dataframename.at['rowlabel', 'columnlabel']"
+        },
+        {
+          "zh": "dataframename.get('rowlabel', 'columnlabel')",
+          "en": "dataframename.get('rowlabel', 'columnlabel')"
+        },
+        {
+          "zh": "dataframename.cell('rowlabel', 'columnlabel')",
+          "en": "dataframename.cell('rowlabel', 'columnlabel')"
+        },
+        {
+          "zh": "dataframename.value('rowlabel', 'columnlabel')",
+          "en": "dataframename.value('rowlabel', 'columnlabel')"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用dataframename.at['rowlabel', 'columnlabel']可以访问特定的单元格。",
+        "en": "Use dataframename.at['rowlabel', 'columnlabel'] to access a specific cell."
+      },
+      "topic": "dataframe-access",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 21",
+        "section": "dataframename.at['rowlabel','columnlabel']"
+      },
+      "sourceChapter": "pandas"
+    },
+    {
+      "id": "pd-009",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "如何获取DataFrame每列的平均值？",
+        "en": "How to get the mean of each column in a DataFrame?"
+      },
+      "options": [
+        {
+          "zh": "dataframename.mean()",
+          "en": "dataframename.mean()"
+        },
+        {
+          "zh": "dataframename.average()",
+          "en": "dataframename.average()"
+        },
+        {
+          "zh": "dataframename.avg()",
+          "en": "dataframename.avg()"
+        },
+        {
+          "zh": "dataframename.centre()",
+          "en": "dataframename.centre()"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用dataframename.mean()方法可以计算DataFrame每列的平均值。",
+        "en": "Use the dataframename.mean() method to calculate the mean of each column in a DataFrame."
+      },
+      "topic": "dataframe-statistics",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 22",
+        "section": "dataframename.mean() gives mean of each column"
+      },
+      "sourceChapter": "pandas"
+    },
+    {
+      "id": "pd-010",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何获取DataFrame每行的平均值？",
+        "en": "How to get the mean of each row in a DataFrame?"
+      },
+      "options": [
+        {
+          "zh": "dataframename.T.mean()",
+          "en": "dataframename.T.mean()"
+        },
+        {
+          "zh": "dataframename.mean(axis=1)",
+          "en": "dataframename.mean(axis=1)"
+        },
+        {
+          "zh": "dataframename.row_mean()",
+          "en": "dataframename.row_mean()"
+        },
+        {
+          "zh": "dataframename.mean_rows()",
+          "en": "dataframename.mean_rows()"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用dataframename.T.mean()可以获取DataFrame每行的平均值，通过转置后计算列的平均值。",
+        "en": "Use dataframename.T.mean() to get the mean of each row in a DataFrame by transposing and then calculating column means."
+      },
+      "topic": "dataframe-statistics",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 22",
+        "section": "dataframename.T.mean() gives mean of each row"
+      },
+      "sourceChapter": "pandas"
+    },
+    {
+      "id": "pd-011",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "如何控制Pandas的显示精度？",
+        "en": "How to control Pandas display precision?"
+      },
+      "options": [
+        {
+          "zh": "pd.set_option('precision', 2)",
+          "en": "pd.set_option('precision', 2)"
+        },
+        {
+          "zh": "pd.set_precision(2)",
+          "en": "pd.set_precision(2)"
+        },
+        {
+          "zh": "pd.precision(2)",
+          "en": "pd.precision(2)"
+        },
+        {
+          "zh": "pd.display_precision(2)",
+          "en": "pd.display_precision(2)"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用pd.set_option('precision', 2)可以设置显示精度为小数点后2位。",
+        "en": "Use pd.set_option('precision', 2) to set display precision to 2 decimal places."
+      },
+      "topic": "pandas-options",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 22",
+        "section": "Use the set_option function: pd.set_option('precision', 2)"
+      },
+      "sourceChapter": "pandas"
+    },
+    {
+      "id": "pd-012",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "DataFrame的转置是什么？",
+        "en": "What is the transpose of a DataFrame?"
+      },
+      "options": [
+        {
+          "zh": "dataframename.T",
+          "en": "dataframename.T"
+        },
+        {
+          "zh": "dataframename.transpose()",
+          "en": "dataframename.transpose()"
+        },
+        {
+          "zh": "dataframename.flip()",
+          "en": "dataframename.flip()"
+        },
+        {
+          "zh": "dataframename.rotate()",
+          "en": "dataframename.rotate()"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用dataframename.T属性可以获取DataFrame的转置视图。",
+        "en": "Use the dataframename.T attribute to get a transposed view of the DataFrame."
+      },
+      "topic": "dataframe-transposing",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 22",
+        "section": "dataframename.T is a transposed view"
+      },
+      "sourceChapter": "pandas"
+    },
+    {
+      "id": "pd-013",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何对DataFrame进行布尔索引？",
+        "en": "How to perform boolean indexing on a DataFrame?"
+      },
+      "options": [
+        {
+          "zh": "dataframename[dataframename > 90]",
+          "en": "dataframename[dataframename > 90]"
+        },
+        {
+          "zh": "dataframename.filter(dataframename > 90)",
+          "en": "dataframename.filter(dataframename > 90)"
+        },
+        {
+          "zh": "dataframename.select(dataframename > 90)",
+          "en": "dataframename.select(dataframename > 90)"
+        },
+        {
+          "zh": "dataframename.where(dataframename > 90)",
+          "en": "dataframename.where(dataframename > 90)"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用dataframename[condition]可以进行布尔索引，筛选满足条件的行。",
+        "en": "Use dataframename[condition] to perform boolean indexing and filter rows that meet the condition."
+      },
+      "topic": "dataframe-indexing",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 20",
+        "section": "dataframename[dataframename > 90]"
+      },
+      "sourceChapter": "pandas"
+    },
+    {
+      "id": "pd-014",
+      "type": "multiple-choice",
+      "difficulty": "hard",
+      "question": {
+        "zh": "以下代码的输出是什么？\n\n```python\nimport pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})\nprint(df.loc[0:1, 'A'])\n```",
+        "en": "What is the output of the following code?\n\n```python\nimport pandas as pd\ndf = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})\nprint(df.loc[0:1, 'A'])\n```"
+      },
+      "options": [
+        {
+          "zh": "0    1\n1    2\nName: A, dtype: int64",
+          "en": "0    1\n1    2\nName: A, dtype: int64"
+        },
+        {
+          "zh": "0    1\nName: A, dtype: int64",
+          "en": "0    1\nName: A, dtype: int64"
+        },
+        {
+          "zh": "1    2\n2    3\nName: A, dtype: int64",
+          "en": "1    2\n2    3\nName: A, dtype: int64"
+        },
+        {
+          "zh": "Error",
+          "en": "Error"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "df.loc[0:1, 'A']选择第0行到第1行的A列，包括第1行（loc是包含的）。",
+        "en": "df.loc[0:1, 'A'] selects rows 0 to 1 of column A, including row 1 (loc is inclusive)."
+      },
+      "topic": "dataframe-indexing",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 19",
+        "section": "dataframename.loc['label1':'label2'] includes label2!"
+      },
+      "sourceChapter": "pandas"
+    },
+    {
+      "id": "plt-001",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "如何导入matplotlib.pyplot模块？",
+        "en": "How to import the matplotlib.pyplot module?"
+      },
+      "options": [
+        {
+          "zh": "import matplotlib.pyplot as plt",
+          "en": "import matplotlib.pyplot as plt"
+        },
+        {
+          "zh": "import matplotlib as plt",
+          "en": "import matplotlib as plt"
+        },
+        {
+          "zh": "from matplotlib import pyplot",
+          "en": "from matplotlib import pyplot"
+        },
+        {
+          "zh": "import pyplot as plt",
+          "en": "import pyplot as plt"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "标准的matplotlib导入方式是'import matplotlib.pyplot as plt'，这是最常用的约定。",
+        "en": "The standard matplotlib import is 'import matplotlib.pyplot as plt', which is the most common convention."
+      },
+      "topic": "matplotlib-basics",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_04_Midterm_Review.md - Page 9",
+        "section": "Matplotlib Introduction"
+      },
+      "sourceChapter": "matplotlib"
+    },
+    {
+      "id": "plt-002",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "如何创建一个简单的线图？",
+        "en": "How to create a simple line plot?"
+      },
+      "options": [
+        {
+          "zh": "plt.plot(x, y)",
+          "en": "plt.plot(x, y)"
+        },
+        {
+          "zh": "plt.line(x, y)",
+          "en": "plt.line(x, y)"
+        },
+        {
+          "zh": "plt.draw(x, y)",
+          "en": "plt.draw(x, y)"
+        },
+        {
+          "zh": "plt.create(x, y)",
+          "en": "plt.create(x, y)"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "plt.plot(x, y) 是创建线图的基本函数，x和y分别是x轴和y轴的数据。",
+        "en": "plt.plot(x, y) is the basic function to create a line plot, where x and y are the data for x-axis and y-axis respectively."
+      },
+      "topic": "basic-plotting",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_04_Midterm_Review.md - Page 9",
+        "section": "simple-line-plots"
+      },
+      "sourceChapter": "matplotlib"
+    },
+    {
+      "id": "plt-003",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何显示图表？",
+        "en": "How to display a plot?"
+      },
+      "options": [
+        {
+          "zh": "plt.show()",
+          "en": "plt.show()"
+        },
+        {
+          "zh": "plt.display()",
+          "en": "plt.display()"
+        },
+        {
+          "zh": "plt.render()",
+          "en": "plt.render()"
+        },
+        {
+          "zh": "plt.view()",
+          "en": "plt.view()"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "plt.show() 用于显示创建的图表。",
+        "en": "plt.show() is used to display the created plot."
+      },
+      "topic": "basic-plotting",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_04_Midterm_Review.md - Page 9",
+        "section": "Displaying Plots"
+      },
+      "sourceChapter": "matplotlib"
+    },
+    {
+      "id": "plt-004",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何创建散点图？",
+        "en": "How to create a scatter plot?"
+      },
+      "options": [
+        {
+          "zh": "plt.scatter(x, y)",
+          "en": "plt.scatter(x, y)"
+        },
+        {
+          "zh": "plt.plot(x, y, 'o')",
+          "en": "plt.plot(x, y, 'o')"
+        },
+        {
+          "zh": "plt.dots(x, y)",
+          "en": "plt.dots(x, y)"
+        },
+        {
+          "zh": "plt.points(x, y)",
+          "en": "plt.points(x, y)"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "plt.scatter(x, y) 专门用于创建散点图，也可以使用plt.plot(x, y, 'o') 来创建。",
+        "en": "plt.scatter(x, y) is specifically for creating scatter plots, though plt.plot(x, y, 'o') can also be used."
+      },
+      "topic": "scatter-plots",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_04_Midterm_Review.md - Page 9",
+        "section": "simple-scatter-plots"
+      },
+      "sourceChapter": "matplotlib"
+    },
+    {
+      "id": "essay-001",
+      "type": "essay",
+      "difficulty": "medium",
+      "isKeyQuestion": true,
+      "keyQuestionReason": "期中考试重点题目 - Python优势论述",
+      "question": {
+        "zh": "用你自己的话，给出Python在AI和数据科学中流行的两个原因。",
+        "en": "In your own words, give two reasons why Python is a popular language for use in AI and Data Science."
+      },
+      "expected_keywords": [
+        {
+          "zh": "简单易学",
+          "en": "Simple and easy to learn"
+        },
+        {
+          "zh": "丰富的库",
+          "en": "Rich libraries"
+        },
+        {
+          "zh": "社区支持",
+          "en": "Community support"
+        },
+        {
+          "zh": "数据科学工具",
+          "en": "Data science tools"
+        },
+        {
+          "zh": "机器学习框架",
+          "en": "Machine learning frameworks"
+        },
+        {
+          "zh": "简单语法",
+          "en": "Simple syntax"
+        },
+        {
+          "zh": "开源",
+          "en": "Open source"
+        },
+        {
+          "zh": "跨平台",
+          "en": "Cross-platform"
+        }
+      ],
+      "explanation": {
+        "zh": "Python在AI和数据科学中流行的原因包括：1）简单易学的语法和丰富的生态系统；2）大量专门的数据科学和机器学习库（如NumPy、Pandas、Scikit-learn、TensorFlow等）；3）强大的社区支持和开源特性；4）跨平台兼容性。",
+        "en": "Reasons why Python is popular in AI and Data Science include: 1) Simple and easy-to-learn syntax with rich ecosystem; 2) Extensive specialized libraries for data science and machine learning (like NumPy, Pandas, Scikit-learn, TensorFlow, etc.); 3) Strong community support and open-source nature; 4) Cross-platform compatibility."
+      },
+      "topic": "python-advantages",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_04_Midterm_Review.md - Page 11",
+        "section": "give two reasons why Python is a popular language for use in AI and Data Science"
+      },
+      "sourceChapter": "python-ecosystem"
+    },
+    {
+      "id": "pp-011",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何定义一个带有默认参数的函数？",
+        "en": "How to define a function with default parameters?"
+      },
+      "options": [
+        {
+          "zh": "def func(x, y=10):",
+          "en": "def func(x, y=10):"
+        },
+        {
+          "zh": "def func(x=10, y):",
+          "en": "def func(x=10, y):"
+        },
+        {
+          "zh": "def func(x, y): y=10",
+          "en": "def func(x, y): y=10"
+        },
+        {
+          "zh": "def func(x, y): default y=10",
+          "en": "def func(x, y): default y=10"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "默认参数必须在非默认参数之后定义，使用def func(x, y=10)的语法。",
+        "en": "Default parameters must be defined after non-default parameters, using the syntax def func(x, y=10)."
+      },
+      "topic": "function-definition",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_02_Python_Primer.md - Page 8",
+        "section": "Function definition with default parameters"
+      },
+      "sourceChapter": "python-primer"
+    },
+    {
+      "id": "pp-012",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "如何导入一个模块？",
+        "en": "How to import a module?"
+      },
+      "options": [
+        {
+          "zh": "import module_name",
+          "en": "import module_name"
+        },
+        {
+          "zh": "load module_name",
+          "en": "load module_name"
+        },
+        {
+          "zh": "include module_name",
+          "en": "include module_name"
+        },
+        {
+          "zh": "require module_name",
+          "en": "require module_name"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用import module_name语句可以导入Python模块。",
+        "en": "Use the import module_name statement to import Python modules."
+      },
+      "topic": "module-import",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_02_Python_Primer.md - Page 7",
+        "section": "Importing modules"
+      },
+      "sourceChapter": "python-primer"
+    },
+    {
+      "id": "pp-013",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "如何向列表末尾添加一个元素？",
+        "en": "How to add an element to the end of a list?"
+      },
+      "options": [
+        {
+          "zh": "list.append(element)",
+          "en": "list.append(element)"
+        },
+        {
+          "zh": "list.add(element)",
+          "en": "list.add(element)"
+        },
+        {
+          "zh": "list.insert(element)",
+          "en": "list.insert(element)"
+        },
+        {
+          "zh": "list.push(element)",
+          "en": "list.push(element)"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用list.append(element)方法可以向列表末尾添加一个元素。",
+        "en": "Use the list.append(element) method to add an element to the end of a list."
+      },
+      "topic": "list-methods",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_02_Python_Primer.md - Page 9",
+        "section": "List methods: append"
+      },
+      "sourceChapter": "python-primer"
+    },
+    {
+      "id": "pp-014",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何将另一个列表的所有元素添加到当前列表中？",
+        "en": "How to add all elements from another list to the current list?"
+      },
+      "options": [
+        {
+          "zh": "list.extend(other_list)",
+          "en": "list.extend(other_list)"
+        },
+        {
+          "zh": "list.append(other_list)",
+          "en": "list.append(other_list)"
+        },
+        {
+          "zh": "list.add_all(other_list)",
+          "en": "list.add_all(other_list)"
+        },
+        {
+          "zh": "list.merge(other_list)",
+          "en": "list.merge(other_list)"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用list.extend(other_list)可以将另一个列表的所有元素添加到当前列表中。",
+        "en": "Use list.extend(other_list) to add all elements from another list to the current list."
+      },
+      "topic": "list-methods",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_02_Python_Primer.md - Page 9",
+        "section": "List methods: extend"
+      },
+      "sourceChapter": "python-primer"
+    },
+    {
+      "id": "pp-015",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何对列表进行排序？",
+        "en": "How to sort a list?"
+      },
+      "options": [
+        {
+          "zh": "list.sort()",
+          "en": "list.sort()"
+        },
+        {
+          "zh": "list.order()",
+          "en": "list.order()"
+        },
+        {
+          "zh": "list.arrange()",
+          "en": "list.arrange()"
+        },
+        {
+          "zh": "list.organize()",
+          "en": "list.organize()"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用list.sort()方法可以对列表进行原地排序。",
+        "en": "Use the list.sort() method to sort a list in-place."
+      },
+      "topic": "list-methods",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_02_Python_Primer.md - Page 9",
+        "section": "List methods: sort"
+      },
+      "sourceChapter": "python-primer"
+    },
+    {
+      "id": "pp-016",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "序列解包是什么意思？",
+        "en": "What does sequence unpacking mean?"
+      },
+      "options": [
+        {
+          "zh": "将序列的元素分别赋值给多个变量",
+          "en": "Assigning elements of a sequence to multiple variables separately"
+        },
+        {
+          "zh": "将多个变量打包成一个序列",
+          "en": "Packing multiple variables into a sequence"
+        },
+        {
+          "zh": "解压缩文件",
+          "en": "Decompressing files"
+        },
+        {
+          "zh": "删除序列中的元素",
+          "en": "Removing elements from a sequence"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "序列解包是将序列的元素分别赋值给多个变量的操作，如a, b, c = [1, 2, 3]。",
+        "en": "Sequence unpacking is the operation of assigning elements of a sequence to multiple variables separately, like a, b, c = [1, 2, 3]."
+      },
+      "topic": "sequence-unpacking",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_02_Python_Primer.md - Page 10",
+        "section": "Sequence unpacking"
+      },
+      "sourceChapter": "python-primer"
+    },
+    {
+      "id": "pp-017",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "enumerate函数的作用是什么？",
+        "en": "What is the purpose of the enumerate function?"
+      },
+      "options": [
+        {
+          "zh": "返回索引和值的配对",
+          "en": "Return pairs of index and value"
+        },
+        {
+          "zh": "计算序列的长度",
+          "en": "Calculate the length of a sequence"
+        },
+        {
+          "zh": "对序列进行排序",
+          "en": "Sort a sequence"
+        },
+        {
+          "zh": "删除序列中的重复元素",
+          "en": "Remove duplicate elements from a sequence"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "enumerate函数返回索引和值的配对，常用于需要同时访问索引和值的循环中。",
+        "en": "The enumerate function returns pairs of index and value, commonly used in loops where both index and value are needed."
+      },
+      "topic": "enumerate-function",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_02_Python_Primer.md - Page 12",
+        "section": "enumerate function"
+      },
+      "sourceChapter": "python-primer"
+    },
+    {
+      "id": "pp-018",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "zip函数的作用是什么？",
+        "en": "What is the purpose of the zip function?"
+      },
+      "options": [
+        {
+          "zh": "将多个序列打包成元组的迭代器",
+          "en": "Pack multiple sequences into an iterator of tuples"
+        },
+        {
+          "zh": "压缩文件",
+          "en": "Compress files"
+        },
+        {
+          "zh": "解压缩文件",
+          "en": "Decompress files"
+        },
+        {
+          "zh": "对序列进行排序",
+          "en": "Sort sequences"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "zip函数将多个序列打包成元组的迭代器，如zip([1,2], ['a','b'])返回(1,'a'), (2,'b')。",
+        "en": "The zip function packs multiple sequences into an iterator of tuples, like zip([1,2], ['a','b']) returns (1,'a'), (2,'b')."
+      },
+      "topic": "zip-function",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_02_Python_Primer.md - Page 12",
+        "section": "zip function"
+      },
+      "sourceChapter": "python-primer"
+    },
+    {
+      "id": "pp-019",
+      "type": "multiple-choice",
+      "difficulty": "hard",
+      "question": {
+        "zh": "lambda表达式是什么？",
+        "en": "What is a lambda expression?"
+      },
+      "options": [
+        {
+          "zh": "匿名函数",
+          "en": "Anonymous function"
+        },
+        {
+          "zh": "命名函数",
+          "en": "Named function"
+        },
+        {
+          "zh": "类定义",
+          "en": "Class definition"
+        },
+        {
+          "zh": "模块导入",
+          "en": "Module import"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "lambda表达式是创建匿名函数的语法，如lambda x: x*2创建一个将输入乘以2的函数。",
+        "en": "A lambda expression is syntax for creating anonymous functions, like lambda x: x*2 creates a function that multiplies input by 2."
+      },
+      "topic": "lambda-expressions",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_02_Python_Primer.md - Page 13",
+        "section": "lambda expressions"
+      },
+      "sourceChapter": "python-primer"
+    },
+    {
+      "id": "pp-020",
+      "type": "multiple-choice",
+      "difficulty": "hard",
+      "question": {
+        "zh": "生成器表达式和列表推导式的区别是什么？",
+        "en": "What's the difference between generator expressions and list comprehensions?"
+      },
+      "options": [
+        {
+          "zh": "生成器表达式返回迭代器，列表推导式返回列表",
+          "en": "Generator expressions return iterators, list comprehensions return lists"
+        },
+        {
+          "zh": "生成器表达式返回列表，列表推导式返回迭代器",
+          "en": "Generator expressions return lists, list comprehensions return iterators"
+        },
+        {
+          "zh": "没有区别",
+          "en": "No difference"
+        },
+        {
+          "zh": "生成器表达式更快",
+          "en": "Generator expressions are faster"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "生成器表达式使用()语法返回迭代器，列表推导式使用[]语法返回列表。生成器表达式更节省内存。",
+        "en": "Generator expressions use () syntax and return iterators, list comprehensions use [] syntax and return lists. Generator expressions are more memory efficient."
+      },
+      "topic": "generator-expressions",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_02_Python_Primer.md - Page 14",
+        "section": "Generator expressions"
+      },
+      "sourceChapter": "python-primer"
+    },
+    {
+      "id": "np-013",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "如何获取数组的维度数？",
+        "en": "How to get the number of dimensions of an array?"
+      },
+      "options": [
+        {
+          "zh": "array.ndim",
+          "en": "array.ndim"
+        },
+        {
+          "zh": "array.dimensions",
+          "en": "array.dimensions"
+        },
+        {
+          "zh": "array.rank",
+          "en": "array.rank"
+        },
+        {
+          "zh": "array.depth",
+          "en": "array.depth"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用array.ndim属性可以获取数组的维度数。",
+        "en": "Use the array.ndim attribute to get the number of dimensions of an array."
+      },
+      "topic": "array-attributes",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 8",
+        "section": "array.ndim gives the number of dimensions"
+      },
+      "sourceChapter": "numpy"
+    },
+    {
+      "id": "np-014",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "如何获取数组的形状？",
+        "en": "How to get the shape of an array?"
+      },
+      "options": [
+        {
+          "zh": "array.shape",
+          "en": "array.shape"
+        },
+        {
+          "zh": "array.size",
+          "en": "array.size"
+        },
+        {
+          "zh": "array.dimensions",
+          "en": "array.dimensions"
+        },
+        {
+          "zh": "array.structure",
+          "en": "array.structure"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用array.shape属性可以获取数组的形状，返回一个元组。",
+        "en": "Use the array.shape attribute to get the shape of an array, which returns a tuple."
+      },
+      "topic": "array-attributes",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 8",
+        "section": "array.shape gives the shape"
+      },
+      "sourceChapter": "numpy"
+    },
+    {
+      "id": "np-015",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "如何创建一个全零数组？",
+        "en": "How to create an array of all zeros?"
+      },
+      "options": [
+        {
+          "zh": "np.zeros(shape)",
+          "en": "np.zeros(shape)"
+        },
+        {
+          "zh": "np.zero(shape)",
+          "en": "np.zero(shape)"
+        },
+        {
+          "zh": "np.empty(shape)",
+          "en": "np.empty(shape)"
+        },
+        {
+          "zh": "np.null(shape)",
+          "en": "np.null(shape)"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用np.zeros(shape)可以创建一个指定形状的全零数组。",
+        "en": "Use np.zeros(shape) to create an array of all zeros with the specified shape."
+      },
+      "topic": "array-creation",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 7",
+        "section": "np.zeros() creates array of zeros"
+      },
+      "sourceChapter": "numpy"
+    },
+    {
+      "id": "np-016",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": {
+        "zh": "如何创建一个全一数组？",
+        "en": "How to create an array of all ones?"
+      },
+      "options": [
+        {
+          "zh": "np.ones(shape)",
+          "en": "np.ones(shape)"
+        },
+        {
+          "zh": "np.one(shape)",
+          "en": "np.one(shape)"
+        },
+        {
+          "zh": "np.full(shape, 1)",
+          "en": "np.full(shape, 1)"
+        },
+        {
+          "zh": "np.identity(shape)",
+          "en": "np.identity(shape)"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用np.ones(shape)可以创建一个指定形状的全一数组。",
+        "en": "Use np.ones(shape) to create an array of all ones with the specified shape."
+      },
+      "topic": "array-creation",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 7",
+        "section": "np.ones() creates array of ones"
+      },
+      "sourceChapter": "numpy"
+    },
+    {
+      "id": "np-017",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "NumPy数组的视图和拷贝的区别是什么？",
+        "en": "What's the difference between NumPy array views and copies?"
+      },
+      "options": [
+        {
+          "zh": "视图共享内存，拷贝不共享内存",
+          "en": "Views share memory, copies don't share memory"
+        },
+        {
+          "zh": "拷贝共享内存，视图不共享内存",
+          "en": "Copies share memory, views don't share memory"
+        },
+        {
+          "zh": "视图和拷贝都共享内存",
+          "en": "Both views and copies share memory"
+        },
+        {
+          "zh": "视图和拷贝都不共享内存",
+          "en": "Neither views nor copies share memory"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "NumPy数组的视图与原数组共享内存，修改视图会影响原数组；拷贝是独立的内存空间。",
+        "en": "NumPy array views share memory with the original array, so modifying a view affects the original; copies are independent memory spaces."
+      },
+      "topic": "views-vs-copies",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 10",
+        "section": "Views vs copies"
+      },
+      "sourceChapter": "numpy"
+    },
+    {
+      "id": "np-018",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何垂直堆叠两个数组？",
+        "en": "How to vertically stack two arrays?"
+      },
+      "options": [
+        {
+          "zh": "np.vstack((array1, array2))",
+          "en": "np.vstack((array1, array2))"
+        },
+        {
+          "zh": "np.vertical_stack((array1, array2))",
+          "en": "np.vertical_stack((array1, array2))"
+        },
+        {
+          "zh": "np.stack_vertical((array1, array2))",
+          "en": "np.stack_vertical((array1, array2))"
+        },
+        {
+          "zh": "np.concatenate_vertical((array1, array2))",
+          "en": "np.concatenate_vertical((array1, array2))"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用np.vstack((array1, array2))可以垂直堆叠两个数组。",
+        "en": "Use np.vstack((array1, array2)) to vertically stack two arrays."
+      },
+      "topic": "array-stacking",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 11",
+        "section": "np.vstack for vertical stacking"
+      },
+      "sourceChapter": "numpy"
+    },
+    {
+      "id": "np-019",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何水平堆叠两个数组？",
+        "en": "How to horizontally stack two arrays?"
+      },
+      "options": [
+        {
+          "zh": "np.hstack((array1, array2))",
+          "en": "np.hstack((array1, array2))"
+        },
+        {
+          "zh": "np.horizontal_stack((array1, array2))",
+          "en": "np.horizontal_stack((array1, array2))"
+        },
+        {
+          "zh": "np.stack_horizontal((array1, array2))",
+          "en": "np.stack_horizontal((array1, array2))"
+        },
+        {
+          "zh": "np.concatenate_horizontal((array1, array2))",
+          "en": "np.concatenate_horizontal((array1, array2))"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用np.hstack((array1, array2))可以水平堆叠两个数组。",
+        "en": "Use np.hstack((array1, array2)) to horizontally stack two arrays."
+      },
+      "topic": "array-stacking",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 11",
+        "section": "np.hstack for horizontal stacking"
+      },
+      "sourceChapter": "numpy"
+    },
+    {
+      "id": "pd-015",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何对DataFrame按列进行排序？",
+        "en": "How to sort a DataFrame by column?"
+      },
+      "options": [
+        {
+          "zh": "df.sort_values(by='column_name')",
+          "en": "df.sort_values(by='column_name')"
+        },
+        {
+          "zh": "df.sort('column_name')",
+          "en": "df.sort('column_name')"
+        },
+        {
+          "zh": "df.order_by('column_name')",
+          "en": "df.order_by('column_name')"
+        },
+        {
+          "zh": "df.arrange('column_name')",
+          "en": "df.arrange('column_name')"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用df.sort_values(by='column_name')可以按指定列对DataFrame进行排序。",
+        "en": "Use df.sort_values(by='column_name') to sort a DataFrame by the specified column."
+      },
+      "topic": "dataframe-sorting",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 23",
+        "section": "DataFrame sorting"
+      },
+      "sourceChapter": "pandas"
+    },
+    {
+      "id": "pd-016",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何对DataFrame按索引进行排序？",
+        "en": "How to sort a DataFrame by index?"
+      },
+      "options": [
+        {
+          "zh": "df.sort_index()",
+          "en": "df.sort_index()"
+        },
+        {
+          "zh": "df.sort_by_index()",
+          "en": "df.sort_by_index()"
+        },
+        {
+          "zh": "df.order_index()",
+          "en": "df.order_index()"
+        },
+        {
+          "zh": "df.arrange_index()",
+          "en": "df.arrange_index()"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用df.sort_index()可以按索引对DataFrame进行排序。",
+        "en": "Use df.sort_index() to sort a DataFrame by index."
+      },
+      "topic": "dataframe-sorting",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 23",
+        "section": "DataFrame sorting by index"
+      },
+      "sourceChapter": "pandas"
+    },
+    {
+      "id": "pd-017",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": {
+        "zh": "如何对Series进行排序？",
+        "en": "How to sort a Series?"
+      },
+      "options": [
+        {
+          "zh": "series.sort_values()",
+          "en": "series.sort_values()"
+        },
+        {
+          "zh": "series.sort()",
+          "en": "series.sort()"
+        },
+        {
+          "zh": "series.order()",
+          "en": "series.order()"
+        },
+        {
+          "zh": "series.arrange()",
+          "en": "series.arrange()"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "zh": "使用series.sort_values()可以对Series按值进行排序。",
+        "en": "Use series.sort_values() to sort a Series by values."
+      },
+      "topic": "series-sorting",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 23",
+        "section": "Series sorting"
+      },
+      "sourceChapter": "pandas"
+    },
+    {
+      "id": "fill-001",
+      "type": "fill-in-blank",
+      "difficulty": "easy",
+      "question": {
+        "zh": "Python中用于创建多行字符串的语法是使用三个______。",
+        "en": "In Python, the syntax for creating multi-line strings uses three ______."
+      },
+      "answer": {
+        "zh": "引号",
+        "en": "quotes"
+      },
+      "explanation": {
+        "zh": "三引号（'''或\"\"\"）用于创建多行字符串和文档字符串。",
+        "en": "Triple quotes (''' or \"\"\") are used to create multi-line strings and docstrings."
+      },
+      "topic": "python-basics",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_02_Python_Primer.md - Page 6",
+        "section": "Triple-quoted strings"
+      },
+      "sourceChapter": "python-primer"
+    },
+    {
+      "id": "fill-002",
+      "type": "fill-in-blank",
+      "difficulty": "easy",
+      "question": {
+        "zh": "Python中参数是按______传递的。",
+        "en": "In Python, arguments are passed by ______."
+      },
+      "answer": {
+        "zh": "引用",
+        "en": "reference"
+      },
+      "explanation": {
+        "zh": "Python中参数是按引用传递的，这意味着函数可以修改可变对象。",
+        "en": "Arguments in Python are passed by reference, meaning functions can modify mutable objects."
+      },
+      "topic": "python-basics",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_02_Python_Primer.md - Page 6",
+        "section": "Arguments passed by reference"
+      },
+      "sourceChapter": "python-primer"
+    },
+    {
+      "id": "fill-003",
+      "type": "fill-in-blank",
+      "difficulty": "medium",
+      "question": {
+        "zh": "NumPy数组存储______数据，而Python列表可以存储______数据。",
+        "en": "NumPy arrays store ______ data, while Python lists can store ______ data."
+      },
+      "answer": {
+        "zh": "同质，异质",
+        "en": "homogeneous, heterogeneous"
+      },
+      "explanation": {
+        "zh": "NumPy数组存储同质数据（相同类型），Python列表可以存储异质数据（不同类型）。",
+        "en": "NumPy arrays store homogeneous data (same type), Python lists can store heterogeneous data (different types)."
+      },
+      "topic": "numpy-basics",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 7",
+        "section": "NumPy arrays vs Python lists"
+      },
+      "sourceChapter": "numpy"
+    },
+    {
+      "id": "fill-004",
+      "type": "fill-in-blank",
+      "difficulty": "medium",
+      "question": {
+        "zh": "使用______函数可以创建等间距的浮点值数组。",
+        "en": "Use the ______ function to create an array with evenly spaced floating point values."
+      },
+      "answer": {
+        "zh": "np.linspace",
+        "en": "np.linspace"
+      },
+      "explanation": {
+        "zh": "np.linspace(start, stop, num)可以创建指定数量的等间距浮点值数组。",
+        "en": "np.linspace(start, stop, num) creates an array with a specified number of evenly spaced floating point values."
+      },
+      "topic": "numpy-basics",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 7",
+        "section": "np.linspace function"
+      },
+      "sourceChapter": "numpy"
+    },
+    {
+      "id": "fill-005",
+      "type": "fill-in-blank",
+      "difficulty": "easy",
+      "question": {
+        "zh": "Pandas中______用于存储键值对，______用于存储唯一值。",
+        "en": "In Pandas, ______ stores key-value pairs, ______ stores unique values."
+      },
+      "answer": {
+        "zh": "字典，集合",
+        "en": "Dictionary, Set"
+      },
+      "explanation": {
+        "zh": "字典存储键值对，集合只存储唯一的元素。",
+        "en": "Dictionary stores key-value pairs, Set stores only unique elements."
+      },
+      "topic": "python-data-structures",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_02_Python_Primer.md - Page 11",
+        "section": "Dictionary vs Set"
+      },
+      "sourceChapter": "python-primer"
+    },
+    {
+      "id": "fill-006",
+      "type": "fill-in-blank",
+      "difficulty": "medium",
+      "question": {
+        "zh": "使用______方法可以获取DataFrame每列的平均值。",
+        "en": "Use the ______ method to get the mean of each column in a DataFrame."
+      },
+      "answer": {
+        "zh": "mean()",
+        "en": "mean()"
+      },
+      "explanation": {
+        "zh": "使用dataframename.mean()方法可以计算DataFrame每列的平均值。",
+        "en": "Use the dataframename.mean() method to calculate the mean of each column in a DataFrame."
+      },
+      "topic": "dataframe-statistics",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 22",
+        "section": "DataFrame mean calculation"
+      },
+      "sourceChapter": "pandas"
+    },
+    {
+      "id": "fill-007",
+      "type": "fill-in-blank",
+      "difficulty": "medium",
+      "question": {
+        "zh": "NumPy中的______机制允许不同形状的数组进行运算。",
+        "en": "NumPy's ______ mechanism allows operations on arrays of different shapes."
+      },
+      "answer": {
+        "zh": "广播",
+        "en": "broadcasting"
+      },
+      "explanation": {
+        "zh": "广播是NumPy的一种机制，允许不同形状的数组进行运算，标量值会被扩展到与数组相同的形状。",
+        "en": "Broadcasting is a NumPy mechanism that allows operations on arrays of different shapes, where scalar values are extended to match the array shape."
+      },
+      "topic": "numpy-operations",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_03_Numpy_Pandas.md - Page 13",
+        "section": "Broadcasting"
+      },
+      "sourceChapter": "numpy"
+    },
+    {
+      "id": "fill-008",
+      "type": "fill-in-blank",
+      "difficulty": "easy",
+      "question": {
+        "zh": "使用______可以检查字典中是否存在某个键。",
+        "en": "Use ______ to check whether a key is present in a dictionary."
+      },
+      "answer": {
+        "zh": "'key' in dict",
+        "en": "'key' in dict"
+      },
+      "explanation": {
+        "zh": "使用'key' in dict可以检查字典中是否存在某个键。",
+        "en": "Use 'key' in dict to check whether a key is present in a dictionary."
+      },
+      "topic": "python-data-structures",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_02_Python_Primer.md - Page 11",
+        "section": "Dictionary key checking"
+      },
+      "sourceChapter": "python-primer"
+    },
+    {
+      "id": "fill-009",
+      "type": "fill-in-blank",
+      "difficulty": "medium",
+      "question": {
+        "zh": "使用______函数可以同时获取索引和值。",
+        "en": "Use the ______ function to get both index and value simultaneously."
+      },
+      "answer": {
+        "zh": "enumerate",
+        "en": "enumerate"
+      },
+      "explanation": {
+        "zh": "enumerate函数返回索引和值的配对，常用于需要同时访问索引和值的循环中。",
+        "en": "The enumerate function returns pairs of index and value, commonly used in loops where both index and value are needed."
+      },
+      "topic": "python-functions",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_02_Python_Primer.md - Page 12",
+        "section": "enumerate function"
+      },
+      "sourceChapter": "python-primer"
+    },
+    {
+      "id": "fill-010",
+      "type": "fill-in-blank",
+      "difficulty": "medium",
+      "question": {
+        "zh": "使用______函数可以将多个序列打包成元组的迭代器。",
+        "en": "Use the ______ function to pack multiple sequences into an iterator of tuples."
+      },
+      "answer": {
+        "zh": "zip",
+        "en": "zip"
+      },
+      "explanation": {
+        "zh": "zip函数将多个序列打包成元组的迭代器，如zip([1,2], ['a','b'])返回(1,'a'), (2,'b')。",
+        "en": "The zip function packs multiple sequences into an iterator of tuples, like zip([1,2], ['a','b']) returns (1,'a'), (2,'b')."
+      },
+      "topic": "python-functions",
+      "source": {
+        "type": "lecture",
+        "reference": "CST8504_02_Python_Primer.md - Page 12",
+        "section": "zip function"
+      },
+      "sourceChapter": "python-primer"
+    }
+  ]
+}

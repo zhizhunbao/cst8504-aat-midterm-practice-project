@@ -54,7 +54,7 @@ const LessonDetail = () => {
 
   useEffect(() => {
     // Load chapters data
-    fetch("/src/data/lessons/chapters.json")
+    fetch("/data/lessons/chapters.json")
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP ${response.status}: ${response.statusText}`);
@@ -91,7 +91,7 @@ const LessonDetail = () => {
   const loadTheoryContent = async (chapterId, topicId) => {
     try {
       const response = await fetch(
-        `/src/data/lessons/${chapterId}/theory.json`
+        `/data/lessons/${chapterId}/theory.json`
       );
       if (response.ok) {
         const contentType = response.headers.get("content-type");

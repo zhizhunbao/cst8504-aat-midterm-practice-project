@@ -79,14 +79,14 @@ const Practice = () => {
 
       // 从 public 目录加载所有章节数据
       const chapterModules = await Promise.all([
-        fetch("/src/data/questions/python-basics.json").then((res) =>
+        fetch("/data/questions/python-basics.json").then((res) =>
           res.json()
         ),
-        fetch("/src/data/questions/numpy.json").then((res) => res.json()),
-        fetch("/src/data/questions/pandas.json").then((res) => res.json()),
-        fetch("/src/data/questions/matplotlib.json").then((res) => res.json()),
-        fetch("/src/data/questions/ai-intro.json").then((res) => res.json()),
-        fetch("/src/data/questions/midterm-exam.json").then((res) =>
+        fetch("/data/questions/numpy.json").then((res) => res.json()),
+        fetch("/data/questions/pandas.json").then((res) => res.json()),
+        fetch("/data/questions/matplotlib.json").then((res) => res.json()),
+        fetch("/data/questions/ai-intro.json").then((res) => res.json()),
+        fetch("/data/questions/midterm-exam.json").then((res) =>
           res.json()
         ),
       ]);
